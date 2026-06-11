@@ -1,0 +1,35 @@
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test-and-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Unit + regression tests
+        run: python -m pytest tests/ -q
+
+      # Mock mode (no API key) keeps CI free and deterministic.
+      # Set ANTHROPIC_API_KEY as a repo secret to gate on real model quality.
+      - name: Eval suite with metric gate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python eval/run_eval.py --top-k 3 --fail-under 0.75
+
+      - name: Upload eval report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report
+          path: reports/run_*.json

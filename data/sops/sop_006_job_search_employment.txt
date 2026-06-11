@@ -1,0 +1,295 @@
+SOP-006: JOB SEARCH & EMPLOYMENT IN GERMANY
+Version: 1.5
+Last Updated: 2025-06-01
+Department(s): Advisory Services / Career Development
+Related Partners: socialbee, IFB, WTS, Finance in Motion, BASF, Knauf,
+                  EnBW, 360° Labour Mobility Programme (GAaNF)
+
+================================================================================
+PURPOSE
+================================================================================
+Guide Kenyans and Africans in the diaspora through finding employment in Germany,
+understanding the German job market context, navigating application processes,
+and accessing integration and upskilling resources.
+
+================================================================================
+SCOPE
+================================================================================
+INCLUDED:
+- Job search strategies for the German market
+- Germany–Kenya Labour Mobility Agreement (September 2024)
+- 360° Labour Mobility Programme for skilled migration
+- Integration pathway via socialbee
+- ERP/SAP skills development (erp4students)
+- Current and recent job openings featured by AG-Career Hub
+- Self-employment and freelancing (overview; see SOP-005 for detail)
+
+EXCLUDED:
+- Detailed immigration / work permit procedures (contact Ausländerbehörde)
+- Salary negotiation specifics
+- Employment law (Arbeitsrecht) — advise users to contact a Fachanwalt für
+  Arbeitsrecht (employment law specialist)
+
+================================================================================
+PREREQUISITES
+================================================================================
+P-1: Applicants need a valid residence permit allowing work in Germany (or
+     valid work permit / EU citizenship)
+P-2: For most professional roles: University degree or vocational qualification
+     recognised in Germany (see SOP-008 if foreign qualification)
+P-3: Language requirements vary significantly by role (see SOP-009)
+P-4: For skilled worker immigration from Kenya: Adherence to the
+     Germany-Kenya Labour Mobility Agreement procedures (new Sept 2024)
+
+================================================================================
+PROCEDURE
+================================================================================
+
+STEP 1 — UNDERSTAND THE GERMAN LABOUR MARKET CONTEXT
+  1a. STRUCTURAL DEMAND:
+      Germany is Europe's largest economy and faces a significant LABOUR SHORTAGE
+      across multiple sectors. Priority shortage areas include:
+      - Healthcare (nursing, medicine, care — see SOP-002)
+      - Engineering (mechanical, electrical, mechatronics, software)
+      - Information Technology (SAP, cloud, AI, software development)
+      - Sciences (chemistry, biology, physics — e.g., BASF, Bayer)
+      - Logistics and supply chain
+      - Finance and tax consulting
+
+  1b. FORMAL RECOGNITION:
+      The new Skilled Immigration Act (Fachkräfteeinwanderungsgesetz), discussed
+      at the 4th AG-Career Hub Career & Business Networking Meet-up 2024, has
+      expanded pathways for qualified workers from outside the EU:
+      - Recognises qualifications faster and more broadly
+      - Introduces a "Chancekarte" (opportunity card) for job seekers
+      - Allows experience-based (not just degree-based) immigration
+
+  1c. GERMANY-KENYA LABOUR MOBILITY AGREEMENT:
+      - Signed: 13 September 2024 in Berlin
+      - Kenya was the first African country invited as partner nation to the
+        German President's Bürgerfest in Berlin at this occasion
+      - Expected to create streamlined, win-win labour migration pathways
+      - Focus: Not just facilitating migration to Germany but also job creation
+        locally, outsourcing, and skills transfer initiatives
+
+STEP 2 — ASSESS LANGUAGE AND SKILLS READINESS
+  2a. LANGUAGE:
+      - Most professional jobs in Germany require German at B2 or higher
+      - English-speaking roles exist mainly in international companies, tech,
+        finance, consulting; require advanced English proficiency
+      - Bilingual (German + English) candidates have significantly higher
+        employability — this is the target for most diaspora professionals
+      - See SOP-009 for language pathways
+
+  2b. ERP/SAP SKILLS (high demand):
+      - Germany's industrial and commercial sector runs heavily on SAP ERP systems
+      - erp4students (erp4students.de): University-accredited online SAP S/4HANA
+        courses designed for students and graduates
+        Courses: Practical, career-relevant, recognised by industry
+        Certifications recognised by SAP and major employers
+      - Brandenburg University of Applied Sciences partnership for academic credit
+      - AG-Career Hub partner — available at the 5th Career & Business Meetup
+      - Case study: Peter Dianga used erp4students → secured position in logistics
+        in Bremen, Germany
+
+  2c. CV OPTIMISATION (German CV format is specific):
+      - German CV (Lebenslauf) format differs from international norms:
+        photo required, reverse chronological, no photos in UK/US but mandatory here
+      - Susanna Kis (Lead Recruiter, IT and manufacturing, career coach):
+        Presented at AG-Career Hub's 5th Meet-up on "Optimizing Your German CV"
+        — Follow her on LinkedIn for ongoing tips
+
+STEP 3 — ACCESS INTEGRATION AND EMPLOYMENT PROGRAMMES
+
+  socialbee (socialbee.org):
+  - Germany's leading integration expert for refugees and migrants
+  - Helps job seekers find meaningful employment through:
+    → Tailored qualification programmes
+    → Job placements with German companies
+    → Intercultural support
+  - Also supports German companies in hiring diverse talent for the long term
+  - AG-Career Hub partner: Osman Vatansever (Community & Relationship Manager)
+    presents at AG-Career Hub events; one community member joined socialbee
+    and secured a job at a top German company
+  - Contact: https://www.socialbee.org
+
+  360° Labour Mobility Programme (GAaNF):
+  - Founded by Edith Otiende-Lawani (Lawyer, GAaNF e.V., Munich)
+  - Provides comprehensive support to qualified professionals from third
+    countries (Ghana, Nigeria — expanding to Kenya)
+  - Connects skilled job seekers with German employers
+  - One of 15 expert institutions addressing Germany's skills shortage
+  - Contact via: https://www.gaanf.org
+
+STEP 4 — FIND CURRENT JOB OPENINGS
+
+  Current and recent opportunities featured by AG-Career Hub:
+
+  FINANCE IN MOTION (Frankfurt):
+  - Impact asset manager managing ~€4 billion in SFDR Article 9 funds
+  - Focus: Emerging markets, green/social finance, SDGs
+  - Current/recent openings (verify current status at their careers page):
+    → HR Business Partner (m/f/d) — Frankfurt | Full-time | Senior role
+      Requirements: HR degree, B2 German + English, German labour law knowledge
+    → Working Student — Technical Assistance Management (m/f/d) | Hybrid
+      Requirements: Bachelor's (economics/sustainability), Excel skills, English
+  - Careers page: https://financeinmotion.careers.hibob.com
+
+  BASF SE (Ludwigshafen):
+  - World's largest chemical company (German headquarters)
+  - Berufsorientierungspraktikum 2027 (career orientation internship):
+    Available from 8th grade, 1–2 weeks, no prior knowledge required
+    Fields: Chemistry, biology, IT, engineering, business, gastronomy
+  - For students and early-career professionals interested in BASF as a future employer
+  - Apply: https://basf.jobs/BASF_Azubi
+
+  WTS GLOBAL (Multiple cities):
+  - Global full-service provider of tax, financial and deal advisory
+  - 1,500+ experts in Germany, one of the most progressive digital tax units globally
+  - Business units: Tax, Advisory, Digital
+  - Does NOT offer annual audits (independent/impartial position)
+  - Current openings: https://wts.com/de-de/karriere/jobboerse
+  - Allan Onsando (Co-Head Africa TaxPertise Centre at WTS) is a community member
+    and presents on career paths in international tax at AG-Career Hub events
+  - Relevant for law, business, and accounting graduates
+
+  KNAUF (Multiple sites):
+  - Global building materials manufacturer (German company)
+  - Kelvin Makaka: Project Engineer at Knauf, Kenyan professional who studied
+    Mechatronics in Germany and shares his career journey at AG-Career Hub events
+  - For engineering graduates interested in manufacturing/construction sector
+
+  ENBW AG (Energy sector):
+  - One of Germany's largest energy companies
+  - Maureen Burgstahler: Agile Coach & Team Lead at EnBW (Kenyan professional)
+    presents at AG-Career Hub events + mental wellness workshops
+  - For business/engineering graduates interested in the energy sector transformation
+  - EnBW website: https://www.enbw.com
+
+  HORIZONT3000 (NGO/Development sector):
+  - One of Austria's largest development cooperation organisations
+  - Current openings in Africa including East Africa/Uganda
+  - Job board: https://www.horizont3000.org/en/jobs
+
+  AGIAMONDO (Development cooperation):
+  - Coordinator, ZFD programme in Kenya — Germany-based organisation, Kenya role
+  - Requirements: University degree (social/humanities), development cooperation
+    experience, German + English skills, EU citizenship required for this specific role
+  - Apply: https://jobs.agiamondo.de
+
+STEP 5 — CAREER PATHWAY CASE STUDIES (from AG-Career Hub community)
+  These professionals from the Kenyan community in Germany shared their career
+  paths at AG-Career Hub events — useful for setting realistic expectations:
+
+  IT & ENGINEERING:
+  - James Kimathi: Senior Tech Lead at DocMorris (Netherlands) | SAP MM/SD/FI expertise
+  - Faith Njuguna: Electrical/Electronics Engineer at ALTEN GmbH | Mechatronics
+  - John Waweru: Data Science/GIS at Bezirksregierung Köln | DAAD scholar
+  - Kelvin Makaka: Project Engineer, Knauf | Mechatronics
+  - Brian Saa: SAP Team Lead at Computacenter | Afrika Kommt fellow via SAP SE
+
+  FINANCE & ACCOUNTING:
+  - Samuel Kanyi: M&A at Volkswagen Group | Frankfurt School MSc Finance
+  - Hillary Bett: KWS Berlin | BASF | Actuarial/Finance | CEU scholarship
+  - James Denis Kipkosgei: Ernst & Young | Actuarial/Insurance Risk
+  - Milka Oromo: Accountant at Heima GmbH | Founder of Pacesetters
+
+  LAW & DATA PRIVACY:
+  - Angella Kerubo: Privacy Counsel, NIO (Automotive) | Kenyan law → German Master's
+  - Angella Onsomu: Senior Data Privacy Expert, Fresenius Medical Care
+
+  HEALTHCARE:
+  - David Thuku Kamau: Urologist, Germany | Kenyan medical doctor relocated to Germany
+  - Dr. Anne Mbiri Salako: Analytical chemist, Agrolab GmbH | DAAD PhD scholar
+  - Lilian Athiambo: HIS Administrator, Marien Hospital Bottrop | Au Pair → Ausbildung
+
+================================================================================
+EDGE CASES & EXCEPTIONS
+================================================================================
+EC-1: QUALIFIED PROFESSIONAL WITHOUT GERMAN LANGUAGE SKILLS
+  → English-speaking roles exist but are a minority; main pathways:
+    (a) Build German to B2 while working in an English-speaking role
+    (b) Join socialbee qualification programme
+    (c) Apply to 360° Labour Mobility Programme if in targeted sectors
+  → See SOP-009 for language development pathway
+
+EC-2: FOREIGN QUALIFICATION NOT RECOGNISED
+  → Some professions in Germany have protected titles requiring recognised
+    qualifications (e.g., Arzt, Ingenieur, Rechtsanwalt in some contexts)
+  → See SOP-008 for degree recognition process
+  → Angella Kerubo and Angella Onsomu cases are inspirational examples of
+    finding alternative pathways
+
+EC-3: APPLICANT WANTS TO WORK IN GERMANY WHILE STILL IN KENYA
+  → Germany-Kenya Labour Mobility Agreement opens new pathways
+  → Skilled Worker immigration: Apply for a qualified worker visa
+  → CHANCEKARTE: Opportunity card for job seekers — allows entry to Germany
+    to search for work (requirements: qualifications, language, financial means)
+  → 360° Labour Mobility Programme provides support through this process
+  → Contact GAANF: https://www.gaanf.org
+
+EC-4: STUDENT WANTING PART-TIME WORK ALONGSIDE STUDIES
+  → Student visa allows 120 full days (240 half days) of paid work per year
+  → Many students work as Werkstudent (working student) up to 20 hrs/week
+    during semester, full-time during semester breaks
+  → Werkstudent jobs at Finance in Motion (see above) are a relevant example
+
+EC-5: GRADUATE WITHOUT ERP/SAP SKILLS WANTING TO ENTER LOGISTICS/SUPPLY CHAIN
+  → erp4students programme is specifically designed for this: online, affordable,
+    university-accredited SAP S/4HANA certification
+  → Peter Dianga career case study: DAAD scholarship → erp4students → logistics in Bremen
+  → erp4students website: https://www.erp4students.de
+
+================================================================================
+SYSTEM LIMITATIONS (DATA & PROCESS CONSTRAINTS)
+================================================================================
+SL-1: JOB POSTING CURRENCY
+  → Specific job openings listed in this SOP reflect what was featured at
+    AG-Career Hub events and website; actual open status changes rapidly
+  → Always direct users to the company's careers page for current openings
+
+SL-2: 360° PROGRAMME COUNTRY COVERAGE
+  → Started with Ghana and Nigeria; expansion to Kenya and other countries
+    is actively occurring — verify current status with GAaNF
+
+SL-3: LABOUR MOBILITY AGREEMENT IMPLEMENTATION
+  → Agreement signed September 2024; formal implementation of specific
+    recruitment channels is still developing as of this SOP
+
+SL-4: PROFESSION-SPECIFIC RECOGNITION
+  → Medical doctors, pharmacists, dentists require state-level (Approbation)
+    recognition — a complex separate process this SOP does not detail
+
+================================================================================
+ESCALATION CRITERIA
+================================================================================
+Escalate to human advisory or AG-Career Hub consultation when:
+- User is a medical doctor, pharmacist, or dentist wanting to work in Germany
+  (Approbation process is complex — advise to contact Landesprüfungsamt)
+- User's specific qualification has a complex recognition situation
+- User wants mentorship pairing with a community professional in their exact field
+- User is an employer looking to hire from the Kenyan diaspora
+
+================================================================================
+RELATED SOPS
+================================================================================
+- SOP-003: Study Enrollment (upskilling through German degrees)
+- SOP-004: Settlement & First Steps (for arrival and registration)
+- SOP-007: Career Events & Networking (for connecting with employers)
+- SOP-008: Degree Recognition (for qualification assessment)
+- SOP-009: German Language Requirements (for language readiness)
+- SOP-005: Business & Diaspora Investment (for self-employment)
+
+================================================================================
+NOTES
+================================================================================
+N-1: Afrika Kommt! Programme (SAP SE): A fellowship for African professionals
+     to work at German companies for 12–18 months. Several AG-Career Hub
+     community members (Brian Saa, Peter Nyateng at SAP SE) came via this route.
+     Check current call status at relevant company websites.
+
+N-2: AG-Career Hub partnered with MuTech Technical Training Institute (Kenya)
+     in 2024 to prepare Kenyan youth with German-standard technical skills
+     (mechatronics, automotive, electrical, aviation). This creates a pipeline
+     of technically prepared candidates for German apprenticeships in technical
+     fields beyond nursing.

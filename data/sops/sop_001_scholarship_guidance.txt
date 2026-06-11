@@ -1,0 +1,306 @@
+SOP-001: SCHOLARSHIP GUIDANCE & APPLICATIONS
+Version: 2.1
+Last Updated: 2025-06-01
+Department(s): Advisory Services / FAQ Assistance
+Related Programmes: DAAD, KAS, Bundestag IPS, Green Talents, Solitude Fellowship, Helmut-Schmidt
+
+================================================================================
+PURPOSE
+================================================================================
+Guide users from Kenya and the African diaspora through identifying, understanding,
+and applying for scholarships to study or conduct research in Germany. This SOP
+covers major funded programmes, eligibility criteria, application procedures,
+benefit structures, and known limitations in the process.
+
+================================================================================
+SCOPE
+================================================================================
+INCLUDED:
+- DAAD (German Academic Exchange Service) scholarships for postgraduate study
+- Konrad-Adenauer-Stiftung (KAS) international scholarships
+- German Bundestag International Parliamentary Scholarships (IPS)
+- Green Talents Award (BMBF)
+- Akademie Schloss Solitude Fellowship
+- Helmut-Schmidt-Programme (Public Policy and Good Governance)
+- DAAD Development-Related Postgraduate Courses (EPOS)
+
+EXCLUDED:
+- Undergraduate scholarships (these are rare; direct users to SOP-003)
+- Private company sponsorships (refer to SOP-006)
+- Sports scholarships (covered in ITK Leipzig content, separate pathway)
+- Country-specific scholarships outside the programmes listed above
+
+================================================================================
+PREREQUISITES
+================================================================================
+Before advising on any scholarship application, confirm the user has:
+1. A completed first university degree (Bachelor's or equivalent)
+2. German language certificate at the relevant level (see SOP-009)
+3. A clear study or research objective aligned with the programme
+4. Not already started the target degree in Germany (most programmes exclude this)
+5. Checked the specific programme's eligible countries list
+
+================================================================================
+PROCEDURE
+================================================================================
+
+STEP 1 — IDENTIFY THE RIGHT PROGRAMME
+
+Match user profile to programme using this decision matrix:
+
+  PROFILE: STEM graduate, wants Master's in Germany
+  → DAAD Study Scholarships for STEM Disciplines
+  → Monthly: €992 | Duration: 10–24 months | Start: Oct following year
+  → Requirement: Bachelor's by application deadline, B-language skills, from
+    developing/emerging country
+  → Apply via: https://www2.daad.de (search programme 57742130)
+
+  PROFILE: Music professional, wants postgraduate study at German Hochschule
+  → DAAD Study Scholarships – Postgraduate Music
+  → Monthly: €992 | Duration: 10–24 months | Includes concert exam option
+  → Requirement: First university degree in music OR exhausted training options
+    for instrument in home country
+  → Selection: DAAD committee of German music professors + sound recording required
+  → Note: Separate entrance exam at the Hochschule required; DAAD award does NOT
+    guarantee admission
+
+  PROFILE: Graduate with 2+ years professional experience, development focus
+  → DAAD Development-Related Postgraduate Courses (EPOS)
+  → Monthly: €992 (graduates) | €1,300–€1,400 (doctoral candidates, from Feb 2026)
+  → Duration: 12–42 months | Travel allowance included
+  → Requirement: Bachelor's, 2+ years professional experience, motivation for
+    development-related impact
+  → Deadline: Varies by programme — check EPOS list at daad.de
+
+  PROFILE: Master's or PhD candidate with political/social engagement
+  → Konrad-Adenauer-Stiftung (KAS) International Scholarship
+  → Target countries (East Africa office): Kenya, Uganda, South Sudan,
+    Tanzania, Ethiopia
+  → Requirement: B2 German, academic excellence, social/political engagement,
+    support for democracy/human rights
+  → Benefits: Financial support + international network (15,000+ alumni) +
+    seminar programme + personal mentoring
+  → Domestic application deadline (in Germany): 15 July, 12:00 noon CET each year
+    via KAS Campus Portal (campus.kas.de)
+  → Kenya/East Africa direct application deadline: 1 March 2026
+    Contact: Ms. Eva-Maria Okot — programm managerin Kenya
+  → Official website: https://www.kas.de/en/web/begabtenfoerderung-und-kultur
+
+  PROFILE: Young graduate (<30), politically engaged, B2 German, from East Africa
+  → German Bundestag International Parliamentary Scholarships (IPS)
+  → Target countries: Kenya, Tanzania, Uganda (East Africa); also Ghana, Nigeria,
+    Senegal; Botswana, Namibia, South Africa
+  → Programme: January programme in Berlin | Core: 1-week internship in Bundestag
+    member's office + workshops on democracy, anti-corruption, project management
+  → Duration: ~4 weeks (Jan 4 – Feb 2, 2027 for IPS 2027 edition)
+  → Stipend: €700/month | Free accommodation | Travel costs covered |
+    Health/accident/liability insurance included
+  → Requirement: Under 30, completed university studies, B2 German,
+    strong political/social commitment
+  → Application: Via "IPS digital" online platform (bewerbung.ipsdigital.bundestag.de)
+  → Application window for IPS 2027: 1 April – 15 May 2026
+  → East Africa (Kenya) past deadline reference: 31 May (check annually)
+  → Required documents: Language proof, motivation letter (German, signed, max 2 pages),
+    passport copy, degree certificate, recommendation letter
+  → Max 24 scholars selected across all participating countries
+  → Official page: https://www.bundestag.de/en/europe/international/exchange/ips/africa
+
+  PROFILE: Young researcher in sustainability/environment
+  → Green Talents Award (Federal Ministry of Education and Research, BMBF)
+  → Benefits: 2-week tour of German sustainability research institutions +
+    research stay up to 3 months at German institution of choice +
+    rich network of Green Talents alumni + diverse funding for later collaborations
+  → More information: https://www.greentalents.de
+  → Note: This is a competitive award, not a standard application scholarship
+
+  PROFILE: Artist, scientist, or cultural professional wanting a residential fellowship
+  → Akademie Schloss Solitude Fellowship (Stuttgart)
+  → Monthly grant: €1,200 | Duration: 6, 9, or 12 months
+  → Benefits: Free furnished studio (electricity, water, heating included) +
+    travel expenses for arrival/departure
+  → Requirement: Not enrolled in undergraduate degree (PhD students may apply) |
+    Must reside in Stuttgart minimum 2/3 of fellowship | Register permanent residence
+  → Spheres: Visual, Aural/Physical (music, performance), Digital, Spatial
+    (architecture, design), Textual (literature), Societal (education, curation),
+    Scientific (humanities, social, natural sciences)
+  → Selection rounds held every 2 years | Max 65 fellows per round
+  → Application: https://www.akademie-solitude.de/en/fellowship
+  → Languages: German, English, or French accepted
+
+  PROFILE: Future leader in politics, law, administration from developing country
+  → Helmut-Schmidt-Programme (Public Policy and Good Governance / PPGG)
+  → Administered by DAAD | Targets developing/emerging countries
+  → Funds: Master's degree at German universities in governance-related fields
+  → Also covers: Study periods abroad, internships, networking events
+  → Programme objective: Train future leaders in democratic, social, and economic
+    development for their home countries
+  → Track record: 800+ scholars from 100+ countries since 2009 | 95%+ completion rate
+  → Official: https://www.daad.de/en/information-services-for-higher-education-institutions/further-information-on-daad-programmes/ppgg/
+
+STEP 2 — CONFIRM LANGUAGE REQUIREMENTS
+  - All listed scholarships require minimum B2 German
+  - DAAD funds language courses for successful scholarship holders before programme start
+  - DAAD may fund 2, 4, or 6 months of German language course pre-departure
+  - TestDaF and DSH fees can be reimbursed by DAAD during funding period
+  - Goethe-Institut certificates are the standard accepted proof
+  - Direct user to SOP-009 for detailed language level guidance
+
+STEP 3 — EXPLAIN STANDARD DAAD BENEFIT PACKAGE
+  Where applicable, communicate the following standard DAAD benefits:
+  - Monthly stipend: €992 (graduates), €1,300–€1,400 (doctoral candidates)
+  - Travel allowance (one-time, unless covered by home country)
+  - Annual study allowance: €460 (STEM scholarship)
+  - Health, accident, and personal liability insurance payments
+  - Optional (on request after funding starts): Monthly rent subsidy,
+    allowance for accompanying family members
+  - Green Mobility Top-Up for climate-friendly travel (some programmes)
+  - Note: DAAD does NOT cover tuition fees
+
+STEP 4 — WALK THROUGH APPLICATION PROCESS
+  4a. Identify the correct application portal:
+      - DAAD scholarships: www2.daad.de/deutschland/stipendium
+      - KAS: campus.kas.de
+      - IPS: bewerbung.ipsdigital.bundestag.de
+      - Solitude: akademie-solitude.de
+
+  4b. Standard documents required (most programmes):
+      - Completed application form
+      - Motivation letter (German for most programmes; signed by hand)
+      - CV / academic resume
+      - University degree certificate (original or certified copy in English/German)
+      - Proof of German language proficiency (not older than 2 years for some)
+      - Recommendation letters (from lecturer/professor or employer)
+      - For music: sound recordings submitted via www.daad.de/extrainfo
+
+  4c. Selection process:
+      - Pre-selection from written applications
+      - Shortlisted candidates invited to (digital) interview
+      - Final decision by independent selection committee
+      - Note: For music, a committee of German Hochschule professors decides
+
+STEP 5 — SET TIMELINE EXPECTATIONS
+  - Most DAAD scholarships begin 1 October of the following year
+  - German language course (if needed) starts earlier
+  - KAS domestic deadline: 15 July — applications for following academic year
+  - KAS Kenya/East Africa direct: 1 March
+  - IPS application window: 1 April – 15 May for following January programme
+  - Solitude: Selection rounds every 2 years
+  - Green Talents: Annual call, check greentalents.de for current year
+
+================================================================================
+EDGE CASES & EXCEPTIONS
+================================================================================
+EC-1: APPLICANT HAS ALREADY STARTED A MASTER'S IN GERMANY
+  → Most DAAD and KAS scholarships cannot be awarded for a degree already started
+  → Exception: EPOS may allow continuation in some circumstances — verify with
+    DAAD contact
+  → Advise user to apply before starting, or look at research fellowships instead
+
+EC-2: APPLICANT HAS A DOCTORAL DEGREE ALREADY
+  → DAAD STEM scholarships are for Master's-level only; redirect to postdoctoral
+    programmes or Helmut-Schmidt PPGG if policy-focused
+  → KAS and Solitude are open to doctoral candidates
+
+EC-3: APPLICANT IS ALREADY IN GERMANY
+  → KAS domestic selection: Apply via campus.kas.de by 15 July
+  → DAAD: Check whether in-Germany applications are accepted for specific programme
+  → IPS: Must apply from home country via embassy in most cases
+
+EC-4: APPLICANT DOES NOT MEET B2 GERMAN REQUIREMENT
+  → DAAD funds a language course pre-scholarship, but the scholarship must
+    be awarded first
+  → Advise user to enrol in a Goethe-Institut course to reach B2 before applying
+  → Estimated timeline to B2 from zero: 12–18 months of study
+  → See SOP-009 for language pathways
+
+EC-5: MUSIC APPLICANT FAILS HOCHSCHULE ENTRANCE EXAM
+  → DAAD award does not guarantee admission to any specific Hochschule
+  → Applicant should research entrance exam requirements and application
+    deadlines BEFORE DAAD award (these may be several months before DAAD deadline)
+  → If rejected from all chosen Hochschulen, DAAD scholarship cannot be used
+  → Advise: apply to multiple Hochschulen simultaneously
+
+EC-6: DUAL CITIZENSHIP — KAS AND SOLITUDE
+  → Solitude: Dual citizenship possible, but check entry/residence regulations
+    for partners and families — not always possible to accommodate families abroad
+  → KAS: Dual citizenship acceptable if one nationality is from eligible country
+  → IPS: Dual citizenship explicitly allowed
+
+EC-7: APPLICANT FROM NON-LISTED COUNTRY
+  → Check each programme's eligible country list carefully
+  → EPOS has a specific eligible countries list on DAAD website
+  → IPS is limited to 9 sub-Saharan African countries only
+  → If country not eligible: suggest Erasmus+, bilateral agreements, or
+    university-specific scholarships
+
+EC-8: PHD STUDENT APPLYING FOR SOLITUDE
+  → PhD students may apply; enrolled undergraduate students may not
+  → Fellowship requires physical residence in Stuttgart — not compatible with
+    a German university PhD programme unless very flexible arrangement
+
+================================================================================
+SYSTEM LIMITATIONS (DATA & PROCESS CONSTRAINTS)
+================================================================================
+SL-1: DEADLINE CURRENCY
+  → Scholarship deadlines change annually; all dates in this SOP reflect 2025/2026
+    cycle. Always verify at official programme websites before advising.
+  → IPS past patterns: East Africa (Kenya) deadline historically 31 May;
+    2026 deadline confirmed as 15 May for IPS 2027
+
+SL-2: EPOS PROGRAMME LIST
+  → The EPOS Development-Related Postgraduate Courses list changes each cycle
+  → Always direct users to the official DAAD EPOS list PDF for current
+    programmes with application deadlines
+
+SL-3: STIPEND AMOUNTS
+  → DAAD stipend amounts are subject to periodic adjustment
+  → €1,400/month for doctoral candidates effective February 2026 (was €1,300)
+  → Verify current amounts at daad.de before quoting
+
+SL-4: KAS KENYA OFFICE CONTACT
+  → Contact for Kenya office is Ms. Eva-Maria Okot
+  → Email protected on website; direct users to the official KAS Kenya page
+    for current contact details
+
+SL-5: SOLITUDE SELECTION CYCLE
+  → Fellowship rounds are every 2 years; if a round just closed, the next
+    opportunity may be 2 years away
+  → Website does not always display the next open round prominently
+
+================================================================================
+ESCALATION CRITERIA
+================================================================================
+ESCALATE to human advisory or refer to AG-Career Hub consultation service when:
+- User has specific combination of factors not covered by this SOP
+  (e.g., dual citizenship, mid-programme transfer, disability accommodation)
+- User has been shortlisted or awarded and needs detailed next-step guidance
+- Scholarship application was rejected and user wants appeal/reapplication advice
+- User has country-specific questions about embassy procedures for IPS
+- Questions about the KAAD (Catholic Academic Exchange Service) PhD scholarship
+  — limited public information, direct to https://www.kaad.de
+
+================================================================================
+RELATED SOPS
+================================================================================
+- SOP-003: Study Enrollment in Germany (for university admission alongside scholarship)
+- SOP-009: German Language Requirements & Pathways (for meeting B2 requirement)
+- SOP-008: Degree Recognition (if foreign degree needs assessment for eligibility)
+- SOP-006: Job Search & Employment (if scholarship leads to employment pathway)
+
+================================================================================
+NOTES
+================================================================================
+N-1: AG-Career Hub is a DAAD scholarship ambassador and has helped many Kenyans
+     access DAAD programmes; refer complex cases to their consultation service.
+
+N-2: The ITK Sports Scholarship (University of Leipzig) is a separate pathway for
+     coaches and physical education teachers from developing countries — covered in
+     GENERAL category, not this SOP.
+
+N-3: European Business University Luxembourg (EBU) also offered scholarships through
+     AG-Career Hub's ambassador programme for certificate courses; current status
+     of that partnership should be verified directly with AG-Career Hub.
+
+N-4: Success rates for scholarship applications are not tracked in this system.
+     Advise users that competition is high; applying early and to multiple
+     programmes simultaneously improves chances.

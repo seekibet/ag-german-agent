@@ -1,0 +1,293 @@
+SOP-009: GERMAN LANGUAGE REQUIREMENTS & PATHWAYS
+Version: 1.4
+Last Updated: 2025-06-01
+Department(s): Advisory Services / Academic & Career Preparation
+
+================================================================================
+PURPOSE
+================================================================================
+Clarify German language level requirements for every major Germany opportunity
+pathway (nursing, study, scholarships, employment, degree recognition) and
+provide realistic guidance on how to achieve required levels, estimated
+timelines, and accepted certificates.
+
+================================================================================
+SCOPE
+================================================================================
+INCLUDED:
+- CEFR level framework (A1 to C2) explained in practical terms
+- Language requirements for each opportunity type
+- Accepted language certificates (Goethe-Institut, TestDaF, DSH, ÖSD, telc)
+- Realistic timeline estimates by starting level
+- DAAD language course funding for scholarship holders
+- Special considerations for medical/nursing German
+
+EXCLUDED:
+- English language requirements (IELTS/TOEFL) — mentioned where relevant
+  but not detailed here
+- German language schools listing — advise users to find accredited Goethe-
+  Institut or partner schools in their location
+
+================================================================================
+PREREQUISITES
+================================================================================
+P-1: User has identified which opportunity they are pursuing
+     (use the matrix in PROCEDURE section to find the required level)
+P-2: User knows their current German language level (self-assessment or
+     existing certificate)
+
+================================================================================
+PROCEDURE
+================================================================================
+
+STEP 1 — CEFR LEVEL REFERENCE FRAMEWORK
+
+  A1 — BEGINNER:
+  - Can understand and use very basic phrases
+  - Can introduce themselves and answer simple questions
+  - English-language university courses: sufficient for university application
+  - Daily life in Germany: very limited; functional for basic interactions
+
+  A2 — ELEMENTARY:
+  - Can communicate in simple, routine tasks
+  - Can describe immediate environment and everyday matters
+  - English-language university courses: sufficient for most applications
+  - Daily life: can handle basic transactions and simple conversations
+
+  B1 — INTERMEDIATE:
+  - Can understand main points of clear standard speech on familiar topics
+  - Can produce simple connected text
+  - Minimum for most German-language degree applications (but not enough to start)
+  - Daily life: Can navigate most everyday situations independently
+
+  B2 — UPPER INTERMEDIATE (Critical threshold for most Germany opportunities):
+  - Can understand complex text on concrete and abstract topics
+  - Can interact fluently with native speakers
+  - Can produce clear, detailed text on a wide range of subjects
+  REQUIRED FOR:
+  → Nursing apprenticeship (SGAO) — must be not older than 1 year
+  → KAS International Scholarship
+  → DAAD scholarships (most programmes)
+  → German Bundestag IPS scholarship
+  → Many graduate and some undergraduate programmes
+  → Professional employment in most sectors
+
+  C1 — ADVANCED:
+  - Can understand a wide range of demanding texts
+  - Can express ideas fluently and spontaneously without noticeable searching
+  - Can produce clear, well-structured text on complex subjects
+  REQUIRED FOR:
+  → German-language undergraduate and postgraduate programmes
+  → Most professional/regulated work in Germany (medical, legal, teaching)
+  → Legal terminology work (lawyers, in-house counsel)
+  → Medical/clinical nursing and physician roles
+
+  C2 — MASTERY (near-native):
+  - Virtually unlimited language command
+  Required for: High-level academic or legal work; some specialist medical roles
+  Not required for most standard pathways
+
+STEP 2 — REQUIREMENTS MATRIX BY OPPORTUNITY TYPE
+
+  OPPORTUNITY                        | MINIMUM LEVEL | NOTES
+  -----------------------------------|---------------|----------------------------------
+  Nursing apprenticeship (SGAO)      | B2            | Certificate ≤1 year old
+  English-taught Master's/Bachelor's | A1 or A2      | Varies; verify with university
+  German-taught Bachelor's/Master's  | C1            | B1/B2 to apply, C1 to start
+  KAS Scholarship                    | B2            | Demonstrated by certificate
+  DAAD STEM/Music/EPOS scholarship  | B2            | DAAD may fund further courses
+  Bundestag IPS Scholarship          | B2            | Motivation letter must be German
+  Employment (general professional)  | B2–C1         | Depends on role; IT/finance may accept B2
+  Medical doctor (Approbation)       | C1 or C2      | Varies by Bundesland
+  Legal profession (German context)  | C1            | Technical legal German required
+  Settlement / daily life in Germany | B1 minimum    | A2 survivable but B1 recommended
+
+STEP 3 — ACCEPTED LANGUAGE CERTIFICATES
+
+  PRIMARY CERTIFICATES (most widely accepted):
+
+  GOETHE-INSTITUT:
+  - Worldwide network with exam centres in Nairobi, Kenya
+  - Levels: A1 (Start Deutsch 1) through C2 (Großes Deutsches Sprachdiplom)
+  - Most recognised certificate for all purposes in Germany
+  - Cost: Varies by level and country (roughly €100–200 per exam)
+  - Preparation courses and exams: goethe.de
+
+  TestDaF (Test Deutsch als Fremdsprache):
+  - Specifically designed for university-level German
+  - Levels: TestDaF-3 to TestDaF-5 (equivalent to B2–C1 range)
+  - Required by some German universities as proof of language for admission
+  - DAAD reimburses TestDaF fee for scholarship holders during funding period
+  - Exam centres available internationally including in Africa
+  - Website: testdaf.de
+
+  DSH (Deutsche Sprachprüfung für den Hochschulzugang):
+  - University entrance language test
+  - Only available IN GERMANY at German universities
+  - Levels: DSH-1 (B2), DSH-2 (C1), DSH-3 (C1+)
+  - Cannot be taken in Kenya; only relevant once user is already in Germany
+  - DAAD scholarship holders can take DSH during funding period
+
+  telc (The European Language Certificates):
+  - Available globally; generally accepted for employment and study
+  - Levels A1 through C2
+  - B2 telc Deutsch certificate accepted for SGAO nursing application
+
+  ÖSD (Österreichisches Sprachdiplom Deutsch):
+  - Austrian certificate; accepted in Germany for most purposes
+
+  NOTE: For nursing/SGAO programme specifically: Goethe-Institut is the most
+  commonly held certificate and is confirmed as accepted.
+
+STEP 4 — TIMELINE ESTIMATES (from zero to each level)
+
+  IMPORTANT: Timelines assume consistent study of 10–15 hours per week.
+  Intensity, prior language learning experience, and immersion significantly
+  affect pace.
+
+  A1 (beginner to elementary): 2–4 months
+  A2 (from A1): 2–3 months additional
+  B1 (from A2): 3–4 months additional
+  B2 (from B1): 4–6 months additional ← KEY THRESHOLD
+  C1 (from B2): 6–9 months additional
+
+  CUMULATIVE (from zero):
+  - Reach B2: approximately 12–18 months
+  - Reach C1: approximately 18–27 months
+
+  ACCELERATION OPTIONS:
+  - Intensive language courses (full-time Intensivkurs): Can halve timelines
+  - Immersion in Germany: Fastest route; not practical pre-departure
+  - DAAD funds pre-scholarship language courses (2, 4, or 6 months)
+    for scholarship holders — often in Germany, which provides immersion
+
+STEP 5 — MEDICAL AND NURSING GERMAN (SPECIAL CASE)
+  Clinical/medical German has specific vocabulary requirements BEYOND standard
+  B2 or C1 competence.
+
+  5a. NURSING (B2 + medical German):
+      - The SGAO preparation course at MKU (SOP-002) specifically covers
+        medical German terminology alongside the B2 level
+      - "Pflege-Deutsch" (nursing German) is a recognised preparation need
+      - Some language schools in Kenya now offer medical/nursing German modules
+        in preparation for Ausbildung programmes
+
+  5b. MEDICAL DOCTORS:
+      - Approbation language assessment typically requires demonstration of
+        C1 for medical contexts (written and spoken)
+      - Fachsprachprüfung (Professional Language Examination for Medicine):
+        Required in many Bundesländer for international medical graduates
+        Tests: Patient consultations, case presentations, written documentation
+      - Advise medical doctors to prepare specifically for Fachsprachprüfung
+        alongside general C1 language
+
+STEP 6 — DAAD LANGUAGE COURSE FUNDING (for scholarship recipients)
+  Once a DAAD scholarship is awarded:
+  6a. DAAD can fund payment of an online language course after receiving
+      the Scholarship Award Letter
+  6b. If required: A preparatory German language course in Germany before
+      the study programme (2, 4, or 6 months) — DAAD decides based on
+      current language skills
+  6c. Participation in a German language course in Germany is COMPULSORY
+      if the language of instruction is German and the student does not
+      yet meet the language requirement
+  6d. DAAD funds an allowance for a personally chosen German language course
+      during the scholarship period
+  6e. DAAD reimburses TestDaF or DSH test fees (can be taken in home country
+      or in Germany during funding period)
+
+================================================================================
+EDGE CASES & EXCEPTIONS
+================================================================================
+EC-1: APPLICANT HAS B2 CERTIFICATE BUT IT IS OLDER THAN 1 YEAR (SGAO NURSING)
+  → Must retake the B2 exam; certificate for nursing application must not be
+    older than 1 year
+  → Other scholarships and study applications: 2-year validity is more common
+    standard; SGAO is stricter
+  → Plan: Retake B2 exam within 1 year of intended application to SGAO
+
+EC-2: APPLICANT PASSED ONLY PARTS OF TestDaF (NOT ALL SECTIONS AT REQUIRED LEVEL)
+  → TestDaF is pass/fail per section; all 4 sections (reading, listening,
+    writing, speaking) must reach minimum level (e.g., TestDaF-4 each)
+  → Can retake individual failed sections at many test centres
+  → Goethe-Institut certificate at B2 is simpler single-exam alternative
+
+EC-3: ENGLISH-DOMINANT APPLICANT — CAN THEY AVOID LEARNING GERMAN?
+  → Possible for English-taught Master's programmes (A1/A2 only needed)
+  → NOT possible for: nursing apprenticeship, German-taught programmes,
+    most professional employment, medical licence
+  → Strongly advise all Germany-bound individuals to begin German learning
+    regardless — B2 dramatically expands options and daily life quality
+  → "The German language is becoming increasingly important in the global
+    market" — motivation letter example from AG-Career Hub
+
+EC-4: APPLICANT TOOK A GERMAN LANGUAGE COURSE IN SCHOOL (INFORMAL)
+  → School German does not produce an internationally recognised certificate
+  → Must take official exams at Goethe-Institut or similar accredited provider
+  → Previous school exposure is an advantage for reaching B2 faster
+
+EC-5: APPLICANT'S GOETHE-INSTITUT CERTIFICATE IS FROM A COUNTRY OTHER THAN KENYA
+  → Accepted — Goethe-Institut certificates are standardised globally
+
+EC-6: UNIVERSITY REQUIRES TestDaF BUT APPLICANT ONLY HAS GOETHE-INSTITUT C1
+  → Goethe-Institut C1 (Goethe-Zertifikat C1) is generally accepted as
+    equivalent to TestDaF-4; however, individual universities may specify
+    accepted tests — always verify with the target university's International Office
+  → DSH (available in Germany) is an alternative after arrival
+
+================================================================================
+SYSTEM LIMITATIONS (DATA & PROCESS CONSTRAINTS)
+================================================================================
+SL-1: EXAM AVAILABILITY IN NAIROBI
+  → Goethe-Institut Nairobi is the primary exam centre in Kenya
+  → Exam slots fill quickly, especially for B2 and C1 levels
+  → Book exams 2–3 months in advance
+
+SL-2: TIMELINE VARIABILITY
+  → The timelines in STEP 4 are averages; individual progress varies widely
+  → Advise users to be conservative in their planning
+
+SL-3: ONLINE LEARNING QUALITY
+  → Many online German courses are available (Duolingo, Babbel, Goethe
+    online courses, etc.) but most do not replace formal exam preparation
+  → For exam-level language: recommend structured courses with exam preparation
+
+SL-4: DIALECT AND REGIONAL VARIATION
+  → German has strong regional dialects; Standard German (Hochdeutsch) is what
+    is taught and tested; dialect exposure in Germany is an adjustment but
+    does not affect certification requirements
+
+================================================================================
+ESCALATION CRITERIA
+================================================================================
+Escalate or refer to external resources when:
+- User needs specific Goethe-Institut Nairobi contact and exam schedule
+  (advise to check goethe.de directly)
+- User is a medical doctor needing Fachsprachprüfung preparation materials
+- User needs guidance on language course selection and quality
+- User with severe language difficulties needs specialised learning support
+
+================================================================================
+RELATED SOPS
+================================================================================
+- SOP-001: Scholarship Guidance (B2 required for most scholarships)
+- SOP-002: Nursing Apprenticeship (B2 required, certificate ≤1 year)
+- SOP-003: Study Enrollment (C1 for German-taught programmes)
+- SOP-006: Job Search & Employment (B2–C1 for professional employment)
+- SOP-008: Degree Recognition (C1 for regulated professions)
+
+================================================================================
+NOTES
+================================================================================
+N-1: Community members who struggled most with Germany integration typically
+     cite language as the #1 barrier. Advising users to start German early
+     — even before having a confirmed opportunity — is strongly recommended.
+
+N-2: Several AG-Career Hub community members who now work in Germany started
+     learning German specifically when they decided to pursue the Germany path:
+     Angella Kerubo enrolled in German to C1 after arriving in 2015;
+     Kenyan nursing apprentices start at B2 (SGAO-prepared).
+
+N-3: The EU language framework (CEFR) is used throughout Europe; a Goethe-Institut
+     B2 certificate from Kenya is valid and recognised identically to one
+     obtained in any other country.

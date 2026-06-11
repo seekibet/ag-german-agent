@@ -1,0 +1,262 @@
+SOP-002: NURSING VOCATIONAL TRAINING (AUSBILDUNG) — SGAO PROGRAMME
+Version: 1.9
+Last Updated: 2025-06-01
+Department(s): Advisory Services / Apprenticeship Placement
+Related Partners: Hochschule Koblenz, Mount Kenya University (MKU),
+                  Caritas Bad Mergentheim, Krankenhaus Tauberbischofsheim,
+                  Gemeinschaftsklinikum Mittelrhein
+
+================================================================================
+PURPOSE
+================================================================================
+Guide Kenyan high school graduates and young adults through the structured
+pathway to nursing apprenticeship (Ausbildung Pflege) in Germany via the
+SGAO research project. This SOP documents every stage from eligibility
+assessment through to arrival and integration support in Germany.
+
+================================================================================
+SCOPE
+================================================================================
+INCLUDED:
+- Nursing apprenticeship via the SGAO project (Ensuring a Sustainable Pool
+  of Nursing Professionals), jointly run by AG-Career Hub, Hochschule Koblenz,
+  Mount Kenya University (MKU), and partner hospitals
+- Medical radiology apprenticeship at Gemeinschaftsklinikum Mittelrhein
+  (available from October 2025)
+
+EXCLUDED:
+- Direct self-application to German hospitals without going through the SGAO
+  programme (a different and unsupported pathway)
+- Nursing degree (BSc Nursing) programmes — these are covered in SOP-003
+- Austrian nursing opportunities (a separate partnership via MKU; advise user
+  to contact MKU Nursing Department directly)
+
+================================================================================
+PREREQUISITES
+================================================================================
+The following minimum criteria must ALL be met before proceeding to application:
+
+MANDATORY REQUIREMENTS:
+  R-1: German language certificate at B2 level — certificate must not be
+       older than 1 year at time of application
+  R-2: Kenyan Certificate of Secondary Education (KCSE) with minimum grade C
+  R-3: Age between 20 and 29 years at time of programme start
+  R-4: Genuine interest and motivation to train as a nurse (assessed in aptitude test)
+
+Note: Students with other qualifications (non-KCSE) should contact AG-Career Hub
+directly. The SGAO programme currently focuses on Kenyan high school graduates
+but may evolve to include other East African countries.
+
+================================================================================
+PROCEDURE
+================================================================================
+
+STEP 1 — INITIAL ELIGIBILITY SCREENING
+  1a. Confirm user meets ALL four mandatory requirements (R-1 through R-4)
+  1b. If B2 language is missing: Direct to SOP-009 — user must achieve B2
+      before applying; estimated timeline to reach B2 from B1: 3–6 months
+  1c. If age is outside 20–29: Programme is not suitable; explore SOP-001
+      (scholarships) or SOP-003 (study enrollment) as alternatives
+  1d. If KCSE grade below C: Programme is not suitable; advise user to
+      contact AG-Career Hub for other pathways
+
+STEP 2 — APPLICATION WINDOW
+  Application portal opens TWICE per year:
+  - JANUARY round: For programme starting in Germany in September/October
+  - JULY round: For programme starting in Germany in April
+
+  Application portal for 6th cohort is CLOSED as of this SOP.
+  NEXT OPENING: July (for 7th cohort, starting April 2026).
+  Advise user to monitor: https://www.ag-careerhub.com/consult-us/apprenticeship-courses
+
+STEP 3 — ONLINE APTITUDE TEST
+  After submitting application, eligible candidates are invited to an online
+  aptitude test that assesses:
+  - Cognitive abilities (numeracy, verbal reasoning)
+  - Cultural integration potential
+  - Interest in and suitability for the nursing profession
+  - German comprehension at B2 level
+
+  Outcome: Pass → Enrolment in preparation course | Fail → Not selected for
+  current cohort (may reapply in next window)
+
+STEP 4 — PREPARATION COURSE AT MOUNT KENYA UNIVERSITY (MKU)
+  Selected candidates enrol in a preparation course at MKU covering:
+  - Intercultural training (German culture, workplace norms, healthcare expectations)
+  - Medical German terminology (essential for clinical setting)
+  - Basic nursing skills and German healthcare system overview
+  - Language reinforcement at B2/C1 level
+
+  While preparation course is ongoing:
+  - Visa application documents are collected and processed
+  - AG-Career Hub liaises with partner hospitals for placement
+
+STEP 5 — HOSPITAL PLACEMENT
+  Apprentices are placed at one of the following partner hospitals:
+
+  PRIMARY PARTNERS:
+  - Caritas Bad Mergentheim (Baden-Württemberg)
+    → Nursing apprenticeship | Established partner since 1st cohort
+  - Krankenhaus Tauberbischofsheim (Baden-Württemberg)
+    → Nursing apprenticeship | Established partner since 1st cohort
+
+  NEW PARTNER (from October 2025):
+  - Gemeinschaftsklinikum Mittelrhein (Rhineland-Palatinate)
+    → Nursing apprenticeship AND medical radiology apprenticeship available
+    → Expansion signals the programme's growth into other healthcare sectors
+
+  Placement depends on available hospital slots and cohort intake numbers.
+
+STEP 6 — VISA APPLICATION
+  6a. Required visa type: German National Visa for Vocational Training
+  6b. AG-Career Hub and partner hospitals assist with visa interview preparation
+  6c. German partners assist with required documentation from the hospital side
+  6d. Key documents: B2 certificate, KCSE certificate, training contract from
+      hospital, proof of accommodation, financial proof
+  6e. Processing time: typically 6–12 weeks; apply as early as possible after
+      receiving hospital placement letter
+
+STEP 7 — ARRIVAL & INTEGRATION IN GERMANY
+  7a. German partner hospitals arrange airport pickup for arriving apprentices
+  7b. AG-Career Hub's network of Kenyan professionals in Germany provides
+      ongoing mentoring and emotional/professional support
+  7c. Previous cohorts provide peer mentoring — mentoring systems are in place
+  7d. Apprentices register with local Einwohnermeldeamt within 2 weeks of arrival
+      (see SOP-004 for full settlement procedure)
+  7e. Training contract confirms employment status — apprentices receive a
+      training allowance (Ausbildungsvergütung) from the hospital
+
+STEP 8 — DURATION & QUALIFICATION
+  - Standard nursing apprenticeship (Ausbildung Pflege): 3 years
+  - Combines theory (at vocational school / Berufsschule) and practice (at hospital)
+  - Successful completion awards the state-recognised nursing qualification
+    (Pflegefachfrau/Pflegefachmann) required to work as a nurse in Germany/EU
+  - Graduates are eligible to remain in Germany and apply for positions as
+    qualified nurses upon completion
+
+================================================================================
+PROGRAMME TRACK RECORD
+================================================================================
+Cohort history (as of 2025):
+  1st Cohort: April 2024 — 6 apprentices | First ever, proof of concept
+  2nd Cohort: September 2024 — 7 apprentices
+  3rd Cohort: April 2025 — 12 apprentices | Growing interest
+  4th Cohort: September 2025 — 29 apprentices | Significant scale-up
+
+Total placed to date: 54+ apprentices training as nurses in German hospitals.
+
+The programme is part of the SGAO Research Project (Sicherstellung einer
+Gesunden Ausbildungs-Organisation / Ensuring a Sustainable Pool of Nursing
+Professionals), funded through academic research collaboration.
+
+Background: Germany forecast deficit of 500,000 nurses by 2030; SGAO is
+one evidence-based solution to this structural shortage.
+
+================================================================================
+EDGE CASES & EXCEPTIONS
+================================================================================
+EC-1: APPLICANT HAS NURSING DEGREE (BSc) NOT JUST HIGH SCHOOL
+  → A BSc in Nursing may open a different pathway (recognition + top-up training)
+  → Austria partnership via MKU: MKU nursing graduates have been granted work
+    opportunities in Austria through a separate partnership with Lebenshilfe Tirol
+  → Refer user to MKU Nursing Department and AG-Career Hub for degree-based options
+
+EC-2: APPLICANT OVER 29 OR UNDER 20
+  → Current SGAO programme has a strict 20–29 age limit
+  → Over 29: May qualify for qualified worker immigration (Fachkräfteeinwanderung)
+    if they hold a nursing qualification already — see SOP-006
+  → Under 20: Must wait until 20; can use waiting time to build German language skills
+
+EC-3: B2 CERTIFICATE IS MORE THAN 1 YEAR OLD
+  → Certificate must be renewed — user should retake the B2 exam
+  → Goethe-Institut certificate is standard; TestDaF also accepted for higher levels
+  → Note: Retaking the test takes 4–8 weeks for scheduling + results
+
+EC-4: KCSE GRADE IS C- (C MINUS) NOT C (PLAIN)
+  → C minimum means grade C (plain) or above (C+, B-, B, B+, A-, A)
+  → C- (C minus) does NOT meet the requirement
+  → Advise user to contact AG-Career Hub to discuss alternative evidence of competence
+
+EC-5: APPLICANT WANTS SPECIFIC HOSPITAL LOCATION (e.g., Munich, Berlin)
+  → Current partner hospitals are in Baden-Württemberg and Rhineland-Palatinate only
+  → AG-Career Hub is actively expanding to more hospital partners
+  → Cannot guarantee specific city placement
+  → Advise: flexibility on location increases chances of selection
+
+EC-6: APPLICANT ALREADY IN GERMANY ON A DIFFERENT VISA
+  → May still apply but visa type change process (to training visa) has
+    additional requirements — refer to German immigration authority (Ausländerbehörde)
+  → AG-Career Hub advisory can assist with the process
+
+EC-7: MEDICAL RADIOLOGY TRACK (NEW from October 2025)
+  → Only available at Gemeinschaftsklinikum Mittelrhein
+  → Requirements may differ slightly — confirm with current intake announcements
+  → Advise user to specify interest in radiology during application
+
+EC-8: APPLICANT FROM NON-KENYAN EAST AFRICAN COUNTRY (Uganda, Tanzania, etc.)
+  → SGAO currently focused on Kenya via MKU partnership
+  → AG-Career Hub plans to expand to other sectors and potentially other countries
+  → Advise user to contact AG-Career Hub directly; situation may have evolved
+
+================================================================================
+SYSTEM LIMITATIONS (DATA & PROCESS CONSTRAINTS)
+================================================================================
+SL-1: APPLICATION PORTAL STATUS
+  → The application portal opens and closes on a rolling basis
+  → This SOP cannot reflect real-time portal status; always check
+    ag-careerhub.com/consult-us/apprenticeship-courses for current status
+
+SL-2: COHORT SIZES
+  → The number of places per cohort is determined by hospital capacity, not
+    by demand; 4th cohort (29) shows significant scale but is not guaranteed
+    to repeat at the same level
+
+SL-3: HOSPITAL PARTNERSHIP CHANGES
+  → New hospitals may be added; existing partners may pause or exit
+  → This SOP reflects partnerships as of June 2025
+
+SL-4: VISA PROCESSING TIMES
+  → German embassy processing times in Nairobi vary significantly
+  → Kenya-Germany Labour Mobility Agreement (signed Sept 2024) may improve
+    visa processing, but formal dedicated pathways for trainees still developing
+
+SL-5: PREPARATION COURSE FEES
+  → MKU preparation course fees are not documented in this SOP
+  → Advise user to contact AG-Career Hub or MKU directly for current costs
+
+================================================================================
+ESCALATION CRITERIA
+================================================================================
+Escalate to human advisory or refer to AG-Career Hub consultation when:
+- Applicant has a disability requiring accommodation during training
+- Applicant has dependants (children/spouse) and needs to understand if
+  family accompaniment is possible during apprenticeship
+- Visa has been rejected and user needs assistance with appeal
+- User is a Kenyan currently in Germany and wants to transition to this pathway
+- Questions about training allowances (Ausbildungsvergütung) — not documented
+
+================================================================================
+RELATED SOPS
+================================================================================
+- SOP-001: Scholarship Guidance (for alternative funded pathways)
+- SOP-003: Study Enrollment (for BSc Nursing or Master's pathway instead)
+- SOP-004: Settlement & First Steps (for upon arrival in Germany)
+- SOP-009: German Language Requirements (for reaching B2 level)
+
+================================================================================
+NOTES
+================================================================================
+N-1: This programme is explicitly framed as a research project (SGAO) with
+     Hochschule Koblenz as the academic lead. AG-Career Hub is the community/
+     diaspora engagement partner. MKU provides the preparation and pre-screening.
+
+N-2: The partnership between AG-Career Hub and Hochschule Koblenz was formalized
+     in January 2022 via an MOU, making AG-Career Hub the facilitating body.
+
+N-3: Kenya signed a Labour Mobility Agreement with Germany on 13 September 2024 —
+     the first African country to do so. This agreement is expected to streamline
+     recruitment processes for programmes like SGAO over time.
+
+N-4: MuTech Technical Training Institute (Kitui Campus + Wilson Airport, Nairobi)
+     is a new partner for technical skills preparation — not yet integrated
+     into the nursing pathway but relevant for future technical apprenticeships.

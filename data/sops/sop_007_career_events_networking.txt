@@ -1,0 +1,278 @@
+SOP-007: CAREER EVENTS & NETWORKING
+Version: 1.4
+Last Updated: 2025-06-01
+Department(s): Advisory Services / Community & Events
+Related Partners: TH Nürnberg, BVMW, HambraTech, erp4students, Barmer, socialbee,
+                  Fintiba, LEMFI, Institut für Freie Berufe
+
+================================================================================
+PURPOSE
+================================================================================
+Guide users on finding, attending, and making the most of AG-Career Hub career
+and business networking events, community resources, and mentorship opportunities.
+This SOP documents the annual event calendar, event structure, speaker profiles
+(by category), and community access channels.
+
+================================================================================
+SCOPE
+================================================================================
+INCLUDED:
+- AG-Career Hub annual Career & Business Networking Meet-up (details for 5th edition)
+- AG-Career Hub LIVE talks and career success stories
+- Community channels: WhatsApp, Telegram
+- Mentorship and expert hub
+- Career fair events in Kenya (for those planning to come to Germany)
+
+EXCLUDED:
+- External German career fairs not organised by AG-Career Hub
+- University orientation events (contact respective university directly)
+- Events after June 2025 (not yet documented — check ag-careerhub.com)
+
+================================================================================
+PREREQUISITES
+================================================================================
+P-1: For physical attendance: Confirm event registration (tickets on Eventbrite)
+P-2: For WhatsApp community: Small subscription fee required
+P-3: For LIVE talk access: Free on YouTube/social media (no registration needed)
+
+================================================================================
+PROCEDURE
+================================================================================
+
+STEP 1 — 5TH AG-CAREER HUB CAREER & BUSINESS NETWORKING MEET-UP 2025 (FLAGSHIP EVENT)
+
+  DATE: Saturday, 28 June 2025
+  TIME: 10:00 AM – 5:00/6:00 PM | Evening programme from 7:00 PM onwards
+  VENUE: Technische Hochschule Nürnberg Georg Simon Ohm
+          Bahnhofstraße 87, 90402 Nürnberg, Germany
+  HOST INSTITUTION: TH Nürnberg (AG-Career Hub partner university)
+  TICKETS: https://www.eventbrite.com/e/ag-career-hub-career-business-networking-meetup-2025-tickets-1314973855199
+
+  AGENDA HIGHLIGHTS:
+  - Keynote speeches by industry leaders and diaspora professionals
+  - Panel discussions: Career paths in various fields
+  - Workshops: Mental wellness (Maureen Burgstahler, EnBW)
+  - Design Thinking Workshop (HambraTech)
+  - Exhibitions: Company representatives and service providers
+  - Children & Teens Corner (HambraTech facilitated STEM activities)
+  - Networking reception + evening programme
+
+  5th MEET-UP KEY SPEAKERS & PANELISTS:
+
+  Monica Gichohi (KEYNOTE SPEAKER)
+  Role: Enterprise Digital Transformation Lead EMEA, Bayer Crop Science, Monheim
+  Topic: Breaking Barriers in Tech — From East Africa to EMEA Leadership
+  Background: 19+ years in IT, led €12M IT roadmap for Africa, SAP ERP rollout
+              in 5 African countries, EMEA Digital Lead at Bayer
+
+  David Thuku Kamau (PANELIST)
+  Role: Urologist, leading hospital in Germany; active in CWL Church Bonn
+  Topic: Navigating Medicine, Faith & Life in Germany
+  Organisation: Dokis Advice (dokis-advice.com) — free medical services in Kenya
+
+  Rachael Okongo (PANELIST)
+  Role: Teacher/primary school Berlin + Mentor of future teachers, Universität Potsdam
+  Topic: German Education System & Supporting Your Child's Success
+  Background: BIPOC rights advocate; backgrounds in pharmacy and biology
+
+  Peter Dianga (PANELIST)
+  Role: Junior Logistics Assistant, Bremen | DAAD "Leadership for Africa" scholar
+  Topic: Career in Supply Chain & Logistics + DAAD Scholarship + ERP4Students
+  Background: MA International Business, Hochschule Osnabrück; SAP S/4HANA via erp4students
+
+  Charity Kawira Lucyline (PANELIST)
+  Role: Pricing Actuary, Allianz Germany
+  Topic: Building a Career in the Actuarial Industry & Relocating with Family
+
+  Edith Otiende-Lawani (COMPANY REP / WORKSHOP)
+  Organisation: GAaNF e.V. + 360° Labour Mobility Programme
+  Topic: Career Pathways in Law & Unlocking Potentials of Africans in Diaspora
+
+  Osman Vatansever (COMPANY REP — socialbee)
+  Organisation: socialbee (socialbee.org)
+  Topic: Pathways to Employment in Germany with socialbee
+
+  Julia Miller (COMPANY REP — IFB)
+  Organisation: Institut für Freie Berufe (freie-berufe.com) at FAU Erlangen-Nürnberg
+  Topic: Your Path to Self-Employment & Freelancing in Germany
+
+  Allan Onsando (COMPANY REP — WTS)
+  Organisation: WTS Deutschland — Co-Head Africa TaxPertise Centre
+  Topic: Career in Tax, Legal & Consultation with WTS Deutschland
+
+  Susanna Kis (SPEAKER — Career Coach)
+  Role: Lead Recruiter (IT/manufacturing) + Career Coach
+  Topic: Optimizing Your German CV for Career Success
+
+  Pouyan Khatami (EXHIBITOR — erp4students)
+  Organisation: erp4students | TH Brandenburg
+  Topic: Boost Your Career — Learn ERP with erp4students
+
+  Maureen Burgstahler (EXHIBITOR — EnBW)
+  Organisation: EnBW AG | Also: Founder, Africa & Beyond Women Empowerment Forum
+  Workshop: Mental Health Awareness & Empowerment (Law of Attraction, confidence)
+
+  Kelvin Makaka (SPEAKER)
+  Organisation: Knauf | Project Engineer (Mechatronics, Kenya to Germany)
+  Topic: Moving from University to Engineering Roles in Germany
+
+  Angella Onsomu (SPEAKER)
+  Organisation: Fresenius Medical Care (Senior Data Privacy Expert)
+  Topic: Career Pathways in Law & Data Privacy — from Kenyan law to German career
+
+  5th MEET-UP SPONSORS/PARTNERS:
+  - TH Nürnberg Georg Simon Ohm (venue host and academic partner)
+  - BVMW (Bundesverband Mittelstand — German SME Federation)
+  - GAaNF — Giving Africa a New Face e.V.
+  - erp4students
+  - Dokis Advice
+  - WIDU.africa
+  - Barmer Krankenversicherung (health insurance)
+  - Fintiba (blocked account/financial services)
+  - socialbee
+  - Institut für Freie Berufe (IFB)
+  - LEMFI (cross-border financial services)
+
+STEP 2 — PAST EVENTS (historical reference)
+
+  4th Meet-up 2024 (Nürnberg) — Key speakers included:
+  - Edith Otiende-Lawani: New Skilled Immigration Act + 360° Labour Mobility
+  - Marco Müller: Digital Upskilling, Bayer AG (Head of Digital CoE)
+  - James Kimathi: Career in IT + ERP at DocMorris
+  - Lindah Achieng Ouma: Researcher & Study Coordinator, Bundeswehr University Munich
+
+  3rd End of Year 2023 (Kronberg im Taunus) — Career retreat format:
+  - Fritz-Emmel-Haus, Königsteiner Straße 33, 61476 Kronberg im Taunus
+  - Dates: 9–10 December 2023 | Career + business + community development focus
+  - Speakers: Kizito Odhiambo (agriBORA), Natalie Schrogl (Interface Leadership),
+    Thomas Kalunge (remittances/entrepreneurship), Rachael Okongo
+
+  2nd End of Year 2022 (Frankfurt) — 10 December 2022
+  - Venue: DJH Jugendherberge Frankfurt, Deutschherrnufer 12, Frankfurt
+  - Topics: Farming in Africa (Kizito Odhiambo), Media/narratives (Wanjiku Mwaurah),
+    Healthcare transfer (Dr. Daniel Ogutu), Investments (Angelo Ngugi), IT/remote
+
+  Career Fair 2023 in Kenya:
+  - Venue: Mount Kenya University, Mwai Kibaki Convention Centre, Thika
+  - Date: 17 August 2023 | Time: 10am–2pm EAT
+  - Focus: Career opportunities in Germany and Austria for Kenyan students
+
+STEP 3 — COMMUNITY CHANNELS
+
+  WhatsApp Community (PRIMARY):
+  - Size: 1,400+ members (students, graduates, professionals, families)
+  - Content: Practical advice, job/scholarship alerts, event updates, peer support
+  - Geographic spread: Members across major German cities
+  - Access: Subscription required — sign up at:
+    https://form.jotform.com/agcareerhubinquiries/ag-career-hub-whatsapp-communities
+  - Note: This is the most highly recommended resource for people newly
+    arriving in Germany or planning to come
+
+  Telegram Channel:
+  - Link: https://t.me/joinchat/Dj3aycL_rOBlMzFi
+  - Content: Information sharing — jobs, scholarships, events, general news
+  - Free to join
+
+  YouTube Channel:
+  - AG-Career Hub YouTube channel: Search "AG-Career Hub" or via website
+  - Content: LIVE interviews with career professionals, success stories, WIDU
+    webinars, event highlights
+  - Highlights include WIDU webinar series, Green Talents interview,
+    market entry case study, various career journeys
+
+STEP 4 — MENTORSHIP & EXPERT HUB
+  AG-Career Hub maintains a Mentorship & Expert Hub connecting:
+  - Community members with mentors in their specific professional field
+  - Students with professionals who have gone through the same journey
+
+  Access: https://www.ag-careerhub.com/diaspora/mentorship-expert-hub
+  LIVE Talks page: https://www.ag-careerhub.com/diaspora/talks-career-journeys/live-talks-success-stories
+
+  Career journeys available for reference on the website (not exhaustive):
+  - How to get Kenyan law degree recognised in Germany (Angella Kerubo)
+  - Green Talents Award winner (Kennedy Mbeva Liti)
+  - KAAD PhD scholarship fellow + Diaspora Radio (Dr. Lydia Radoli)
+  - Burnout vs depression (Elizabeth Horlemann, life coach)
+  - Kenyan medical doctor offering free services via Dokis Advice (Dr. Daniel Ogutu)
+  - Sports coaching scholarships at University of Leipzig (ITK programme)
+  - Technology identification with Kepic (Dresden delegation trip)
+  - Climate & sustainability researcher in Germany (Kennedy Mbeva)
+
+================================================================================
+EDGE CASES & EXCEPTIONS
+================================================================================
+EC-1: USER OUTSIDE GERMANY WANTS TO ATTEND AN EVENT
+  → Annual Career & Business Meet-up is an in-person event in Germany
+  → Career Fair in Kenya (2023 edition) shows events are also organised in Kenya
+  → LIVE talks on YouTube are accessible globally — recommend these for
+    remote participants
+  → Annual event location has varied: Kronberg, Frankfurt, Nürnberg — always
+    check current year's event page for location
+
+EC-2: USER WANTS TO BE A SPEAKER OR EXHIBITOR
+  → Contact AG-Career Hub via the website: info@agcareerhub.com
+  → Typically: speakers are professionals from the Kenyan diaspora or German
+    organisations with relevant services for the community
+
+EC-3: USER WANTS TO BRING CHILDREN TO THE EVENT
+  → Kids corner is provided at the annual event (HambraTech facilitated)
+  → Slots for children are LIMITED — must book in advance via the ticket platform
+  → Content: STEM activities, art, culture
+
+EC-4: TICKETS ARE SOLD OUT
+  → Popular events sell out; monitor Eventbrite page for any returned tickets
+  → LIVE talks on YouTube provide free access to similar content
+  → WhatsApp community often shares event recaps and resources
+
+================================================================================
+SYSTEM LIMITATIONS (DATA & PROCESS CONSTRAINTS)
+================================================================================
+SL-1: EVENT DATE ACCURACY
+  → This SOP documents the 5th Career & Business Meet-up (28 June 2025)
+  → Post-June 2025 events are not yet known; always check ag-careerhub.com
+    for upcoming event announcements
+
+SL-2: SPEAKER/EXHIBITOR LIST CHANGES
+  → Speaker lineups can change up to the event day; the list in STEP 1 reflects
+    the confirmed lineup as publicised
+
+SL-3: EVENTBRITE TICKETING
+  → Ticket prices and availability change; always check Eventbrite link directly
+  → Eventbrite link in STEP 1 is for the 5th Meet-up only
+
+SL-4: TELEGRAM LINK
+  → Telegram invite links expire after a number of uses; if the link in STEP 3
+    does not work, check the latest link on ag-careerhub.com
+
+================================================================================
+ESCALATION CRITERIA
+================================================================================
+Escalate to human advisory or contact AG-Career Hub directly when:
+- User wants to partner or sponsor a future event
+- User wants to host an AG-Career Hub event in their city
+- User has a specific mentorship need not covered by the public hub
+- User needs event content in German (most events are bilingual or English)
+
+================================================================================
+RELATED SOPS
+================================================================================
+- SOP-006: Job Search & Employment (for connecting with employers at events)
+- SOP-005: Business & Diaspora Investment (for business networking at events)
+- SOP-004: Settlement & First Steps (community access after arrival)
+
+================================================================================
+NOTES
+================================================================================
+N-1: AG-Career Hub was founded in 2018 as KGCEN (Kenyan-German Career &
+     Entrepreneurship Network) and is now the largest network for Kenyan
+     professionals in Germany with 1,400+ active community members.
+
+N-2: The academic partnership facilitated by AG-Career Hub between Hochschule
+     Koblenz and Mount Kenya University (MKU) — signed January 2022 — is
+     highlighted at events as a model of diaspora-facilitated academic collaboration.
+
+N-3: University of Applied Sciences Augsburg featured AG-Career Hub's initiative
+     in their gP Magazine (2021) — reflecting their growing academic recognition.
+
+N-4: Event frequency: AG-Career Hub has held at minimum one major event per year
+     since 2018, with additional virtual LIVE talks throughout the year.

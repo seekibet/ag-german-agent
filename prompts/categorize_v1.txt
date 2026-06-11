@@ -1,0 +1,15 @@
+Classify this question into exactly one category about opportunities in Germany.
+
+Categories:
+- SCHOLARSHIP : Scholarships, grants, fellowships, DAAD, KAS, IPS, Green Talents, Solitude
+- JOB         : Job openings, employment, working in Germany, socialbee, 360 Labour Mobility
+- APPRENTICESHIP : Vocational training (Ausbildung), nursing programme (SGAO), MuTech
+- STUDY       : University enrollment, degree courses, Uni-Assist, degree recognition (anabin)
+- SETTLEMENT  : Arriving in Germany, registration (Anmeldung), bank account, Steuer-ID
+- BUSINESS    : WIDU.africa, diaspora investment, real estate, freelancing, IFB
+- EVENT       : Networking events, career meetups, AG-Career Hub annual events
+- GENERAL     : Cross-cutting questions spanning multiple categories
+
+Question: "{question}"
+
+Reply with ONLY the category name.

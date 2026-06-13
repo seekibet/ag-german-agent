@@ -353,3 +353,413 @@ reversible; reports are SHA-stamped so results are tied to commits; and the
 mock client means every part of this loop is free until you decide otherwise.
 
 You cannot break it. Run it.
+
+================================================================================
+PART 9 — RUNNING WITH A REAL API KEY
+================================================================================
+
+Everything up to this point used the mock client — free, offline, deterministic.
+This part covers switching to real Claude, what changes, what doesn't, and how to
+watch the system perform on questions that have never been tested before.
+
+────────────────────────────────────────────────────────────────────────────────
+9.1  GET AND SET THE API KEY (do once, takes 3 minutes)
+────────────────────────────────────────────────────────────────────────────────
+
+STEP 1 — GET A KEY
+  Go to: https://console.anthropic.com
+  Sign in (or create a free account) → API Keys → Create Key
+  Copy the key. It looks like: sk-ant-api03-...
+
+STEP 2 — CREATE YOUR .env FILE
+```bash
+cp .env.example .env
+```
+  Open `.env` in any text editor. It looks like this:
+  ```
+  ANTHROPIC_API_KEY=
+  AGENT_MODEL=claude-sonnet-4-20250514
+  JUDGE_MODEL=claude-haiku-4-5-20251001
+  ```
+  Paste your key after `ANTHROPIC_API_KEY=` on the same line:
+  ```
+  ANTHROPIC_API_KEY=sk-ant-api03-your-key-here
+  ```
+  Save and close.
+
+  NOTE: `.env` is in `.gitignore`. It will never be committed. Your key stays
+  on your machine only.
+
+STEP 3 — VERIFY THE KEY IS LIVE (costs ~1 API call)
+```bash
+python -c "
+from src.llm_client import get_client
+client, is_mock = get_client()
+print('MOCK MODE' if is_mock else 'LIVE MODE — real API key found')
+"
+```
+WHAT YOU SHOULD SEE:
+  ```
+  LIVE MODE — real API key found
+  ```
+  If you see `MOCK MODE`: the key is missing or has a leading/trailing space.
+  Open `.env`, check the key is on the `ANTHROPIC_API_KEY=` line with no spaces.
+
+  If you see `anthropic.AuthenticationError`: the key is invalid or expired.
+  Go back to console.anthropic.com, create a new key, paste it in.
+
+────────────────────────────────────────────────────────────────────────────────
+9.2  ASK YOUR FIRST REAL QUESTION (2 API calls, ~3 seconds)
+────────────────────────────────────────────────────────────────────────────────
+
+```bash
+make ask Q="How do I apply for the DAAD scholarship as a Kenyan?"
+```
+
+WHAT HAPPENS:
+  Call 1 — categorize: Claude classifies the question → SCHOLARSHIP
+  Call 2 — generate:   Claude reads the retrieved SOPs and writes a real answer
+
+WHAT YOU SHOULD SEE:
+```
+  ✓  LIVE MODE — agent=claude-sonnet-4-20250514
+                judge=claude-haiku-4-5-20251001 (pinned)
+
+  → running...  done in 4.2s
+
+  ════════════════════════════════════════════════════════════
+  QUESTION
+  How do I apply for the DAAD scholarship as a Kenyan?
+  ════════════════════════════════════════════════════════════
+
+  STEP 1 — CATEGORY DETECTED
+  SCHOLARSHIP
+
+  STEP 2 — SOPs RETRIEVED  (top_k=3)
+  [ 5.12]  SOP_001  SOP-001: SCHOLARSHIP GUIDANCE & APPLICATIONS
+  [ 3.24]  SOP_009  SOP-009: GERMAN LANGUAGE REQUIREMENTS & PATHWAYS
+  [ 2.87]  SOP_003  SOP-003: UNDERGRADUATE & POSTGRADUATE STUDY ENROLLMENT
+
+  STEP 3 — ANSWER
+  ────────────────────────────────────────────────────────────
+  DAAD offers several scholarships for Kenyan graduates...
+  [prose answer, 150-300 words, grounded in SOP_001 content]
+  ...Next step: apply via https://www2.daad.de
+  ────────────────────────────────────────────────────────────
+
+  AUTOMATIC METRICS  (no ground truth needed)
+  grounding_rate              100%  ✓  every cited fact is in the retrieved SOPs
+  staleness_disclaimer_rate   100%  ✓  volatile facts carry verify-at-source note
+  next_step_rate              100%  ✓  answer ends with actionable link/contact
+
+  LLM-AS-JUDGE  (model: claude-haiku-4-5-20251001)
+  verdict: ✓ GOOD
+  reason:  Answer directly addresses DAAD eligibility and cites €992 stipend.
+
+  mode: LIVE  model=claude-sonnet-4-20250514
+  trace: traces/trace_a1b2c3d4.json
+```
+
+HOW REAL ANSWERS DIFFER FROM MOCK ANSWERS:
+  Mock: echoes fact tokens from retrieved text in a list (`- Key facts: DAAD, €992…`)
+  Real: prose paragraphs that explain, connect ideas, include context and caveats
+
+  The metrics and trace structure are IDENTICAL. Real mode doesn't change the
+  plumbing — only what Claude returns as the answer.
+
+────────────────────────────────────────────────────────────────────────────────
+9.3  INTERACTIVE SESSION — MULTIPLE REAL QUESTIONS IN ONE GO
+────────────────────────────────────────────────────────────────────────────────
+
+This is the main way to explore real performance: ask several questions in a row
+and see where the system shines and where it struggles.
+
+```bash
+make live
+```
+
+WHAT YOU SEE ON STARTUP:
+```
+  ✓  LIVE MODE — agent=claude-sonnet-4-20250514
+                judge=claude-haiku-4-5-20251001 (pinned)
+
+  Germany FAQ — live session  (type 'quit' or Ctrl+C to exit)
+  Every answer + metrics printed here, full trace saved to traces/
+
+  Question:
+```
+
+TYPE ANY QUESTION AND PRESS ENTER. Each question prints the full panel (category,
+SOPs, answer, 3 automatic metrics, judge verdict). Then the prompt returns.
+
+TO SAVE THE SESSION FOR LATER ANALYSIS:
+```bash
+make live -- --session user_pilot_june
+```
+This creates `data/sessions/user_pilot_june.csv` with one row per question:
+timestamp, question, category, retrieved SOPs, grounding/staleness/next_step
+scores, judge verdict and reason, and first 300 chars of the answer.
+
+TO EXIT: type `quit`, or press Ctrl+C.
+
+GOOD OPENING QUESTIONS TO TEST DIFFERENT CATEGORIES:
+```
+What scholarships can I get to study in Germany?             → SCHOLARSHIP
+How do I apply for the nursing apprenticeship via SGAO?      → APPRENTICESHIP
+What are the requirements to study in Germany?               → STUDY
+What do I do first when I arrive in Germany?                 → SETTLEMENT
+What is WIDU.africa and how does it work?                    → BUSINESS
+Are there jobs in Germany I can apply for right now?         → JOB
+What events does AG-Career Hub organise this year?           → EVENT
+My KCSE grade is C+, I am 23 and my German is B1 —
+what are my fastest options?                                 → complex, multi-SOP
+```
+The last question is deliberately hard (needs SOP_002 + SOP_009 + SOP_004). It
+reliably shows the recall problem at top_k=3 — the answer will be thinner than
+it should be. Raise top_k to fix it:
+```bash
+python -m src.live "My KCSE is C+, age 23, German B1 — fastest path to Germany?" \
+  --top-k 5
+```
+Compare the two answers side by side. That is FM-01 made visible.
+
+────────────────────────────────────────────────────────────────────────────────
+9.4  RUNNING THE FULL EVAL SUITE WITH REAL MODELS
+────────────────────────────────────────────────────────────────────────────────
+
+The full 25-case eval suite with all three models (agent + judge):
+
+```bash
+make eval
+```
+
+WHAT HAPPENS:
+  For each of the 25 test cases:
+    Call 1 — categorize (agent model)
+    Call 2 — generate   (agent model)
+    Call 3 — judge      (judge model, pinned to claude-haiku-4-5-20251001)
+  Total: 75 API calls, ~4-6 minutes, cost roughly $0.05-0.15.
+
+WATCHING IT RUN (live in the terminal):
+```
+[ 1/25] recall=100% ground=100% What scholarships are available for studying i...
+[ 2/25] recall=50%  ground=98%  How do I apply for the nursing apprenticeship ...
+[ 3/25] recall=100% ground=100% What are the requirements to study in Germany ...
+...
+[25/25] recall=100% ground=100% I want to support a small chicken farm in Keny...
+```
+Watch for: recall < 100% is a retrieval miss (FM-01). Those rows deserve a
+trace read after the run.
+
+FINAL OUTPUT:
+```
+  sop_recall                   87.3%  FM-01
+  category_accuracy            94.0%  FM-02
+  keyword_coverage             78.4%  FM-03   ← real models score higher here
+  grounding_rate               97.1%  FM-04
+  staleness_disclaimer_rate    100.0%  FM-05
+  next_step_rate               100.0%  FM-06
+  judge_good_rate              80.0%
+  COMPOSITE                    92.8%          ← will be higher than mock's 90.2%
+
+Report -> reports/run_504a974_20260611T094532.json
+```
+Real keyword coverage will be higher than mock (real Claude elaborates; the mock
+just echoes tokens). Judge good rate shows how often a real judge finds the real
+answers satisfactory — the target is 80%+.
+
+SKIPPING THE JUDGE TO SAVE COST:
+```bash
+python eval/run_eval.py --no-judge
+```
+Drops to 50 API calls. Use this during iteration; add the judge for a proper
+before/after comparison.
+
+────────────────────────────────────────────────────────────────────────────────
+9.5  READING THE TRACES OF REAL RUNS
+────────────────────────────────────────────────────────────────────────────────
+
+Every real run saves a full trace to `traces/`. After a session or eval run:
+
+```bash
+ls -t traces/ | head -5              # most recent first
+cat traces/trace_<id>.json | python -m json.tool | head -80
+```
+
+WHAT TO LOOK FOR IN A REAL TRACE:
+```json
+{
+  "trace_id": "a1b2c3d4e5f6",
+  "ts": "2026-06-11T09:45:32",
+  "question": "How do I apply for the DAAD scholarship?",
+  "config": {
+    "model": "claude-sonnet-4-20250514",
+    "top_k": 3,
+    "prompts": { "generate": "generate_v2.txt" },  ← which prompt version
+    "mock": false                                    ← confirms real mode
+  },
+  "steps": [
+    { "step": "categorize", "category": "SCHOLARSHIP" },
+    { "step": "retrieve",   "retrieved": [
+        { "sop_id": "SOP_001", "score": 5.12 },
+        { "sop_id": "SOP_009", "score": 3.24 }
+      ]
+    },
+    { "step": "generate",   "answer": "DAAD offers several scholarships..." }
+  ],
+  "result": {
+    "retrieved_context": "...full SOP text that was passed to Claude..."
+  }
+}
+```
+
+THREE THINGS TO CHECK IN EVERY SUSPICIOUS TRACE:
+  1. Did the right SOP appear in `steps[1].retrieved`?
+     If the answer is thin on scholarship details, check if SOP_001 scored
+     highest. If it didn't, the BM25 query missed — FM-01.
+
+  2. Is the answer consistent with `result.retrieved_context`?
+     Read both side by side. Any fact in the answer that isn't in the context
+     is a grounded_rate failure — FM-04.
+
+  3. Does the prompt version in `config.prompts.generate` match what you expect?
+     If you were testing generate_v2.txt but the trace shows v1, you forgot to
+     pass the flag. The trace is ground truth on what actually ran.
+
+────────────────────────────────────────────────────────────────────────────────
+9.6  COST REFERENCE (so nothing surprises you)
+────────────────────────────────────────────────────────────────────────────────
+
+All figures are rough estimates at typical Anthropic pricing. Check
+https://www.anthropic.com/pricing for current rates.
+
+| Command | Agent calls | Judge calls | Total calls | Approx. cost |
+|---|---|---|---|---|
+| `make ask Q="..."` | 2 | 1 | 3 | <$0.01 |
+| `make live` (5 questions) | 10 | 5 | 15 | <$0.05 |
+| `make live` (20 questions) | 40 | 20 | 60 | ~$0.05–0.15 |
+| `make eval` (25 cases, with judge) | 50 | 25 | 75 | ~$0.05–0.20 |
+| `make eval --no-judge` | 50 | 0 | 50 | ~$0.03–0.10 |
+| `python eval/run_eval.py --limit 5` | 10 | 5 | 15 | <$0.05 |
+
+THE CHEAPEST REAL-MODE INNER LOOP:
+```bash
+python eval/run_eval.py --limit 5 --no-judge     # 10 calls, <$0.02
+```
+Use this when iterating on prompts. Run the full `make eval` only for a
+proper before/after comparison.
+
+TO SWITCH BACK TO FREE MOCK MODE AT ANY TIME:
+```bash
+# Option A — remove the key from .env
+# Just delete the line or leave it blank: ANTHROPIC_API_KEY=
+
+# Option B — unset for the current shell only
+unset ANTHROPIC_API_KEY
+make eval    # runs in mock mode immediately, no .env change
+```
+The system checks for the key at runtime. No other change is needed.
+
+────────────────────────────────────────────────────────────────────────────────
+9.7  TURNING REAL QUESTIONS INTO NEW TEST CASES
+────────────────────────────────────────────────────────────────────────────────
+
+The 25 test cases in `data/test_cases.csv` are the eval benchmark. Real
+questions that reveal failures should graduate into that file so the failure
+is regression-tested forever. Here is how.
+
+STEP 1 — RUN A LIVE SESSION AND SPOT A WEAK ANSWER
+```bash
+make live -- --session pilot_1
+```
+Ask questions until the agent gives an answer that is incomplete, wrong, or
+misses an important fact. Note the trace_id from the output.
+
+STEP 2 — READ THAT TRACE
+```bash
+cat traces/trace_<id>.json | python -m json.tool
+```
+Identify: which SOPs were retrieved, which should have been retrieved, what
+fact was missing from the answer.
+
+STEP 3 — REVIEW THE SESSION LOG
+```bash
+cat data/sessions/pilot_1.csv
+```
+The CSV shows all questions with their automatic metric scores. Sort mentally
+by `grounding_rate` < 1.0 (FM-04), `next_step_rate` = 0 (FM-06), or a judge
+verdict of "partial" or "bad" — those are the candidates to promote.
+
+STEP 4 — ADD THE QUESTION TO data/test_cases.csv
+Open `data/test_cases.csv` and add one row. You need to fill in:
+
+| Column | Where to get it | Example |
+|---|---|---|
+| `message` | The question you asked | "How long does it take to reach B2 German from B1?" |
+| `complexity` | Your judgement | simple / medium / complex |
+| `expected_category` | What the correct category is | APPRENTICESHIP |
+| `expected_sops` | Which SOPs the answer NEEDS (from the SOP list) | SOP_002,SOP_009 |
+| `expected_steps` | Key steps a good answer must cover | "1. B1→B2 takes 4-6 months…" |
+| `key_facts` | Specific facts that must appear | "B2 certificate ≤1 year old. 4-6 months from B1." |
+| `policy_details` | Important nuances/caveats | "Goethe-Institut Nairobi — book 2-3 months in advance." |
+
+For `expected_sops`: open the SOPs in `data/sops/` and find which ones contain
+the facts the question needs. SOP_009 covers all language timelines; SOP_002
+covers nursing; SOP_001 covers scholarships, etc.
+
+STEP 5 — VERIFY THE NEW CASE IMMEDIATELY
+```bash
+python eval/run_eval.py --limit 1     # will only run if your row is the last one
+# or target it specifically:
+python -c "
+import pandas as pd
+from src.agent import FAQAgent
+from src import metrics as M
+df = pd.read_csv('data/test_cases.csv')
+row = df[df.message.str.contains('B2 German from B1')].iloc[0]
+agent = FAQAgent()
+trace = agent.answer(row['message'])
+res = trace['result']
+print('recalled:', M.sop_recall(row['expected_sops'].split(','), res['retrieved_sops']))
+print('covered:', M.keyword_coverage(res['answer'], row['key_facts']))
+"
+```
+
+STEP 6 — COMMIT THE NEW CASE
+```bash
+git add data/test_cases.csv
+git commit -m "test: add real-user question — B1→B2 timeline (FM-01 regression)"
+make eval    # the new case now runs in every future eval
+```
+The next eval report will contain this case, and its SHA will be in the
+filename — so you can always trace which test cases existed when a given score
+was produced.
+
+────────────────────────────────────────────────────────────────────────────────
+9.8  WHAT GOOD REAL-WORLD PERFORMANCE LOOKS LIKE
+────────────────────────────────────────────────────────────────────────────────
+
+These are the thresholds worth targeting, based on the failure mode taxonomy:
+
+| Metric | Mock baseline | Real target | Danger zone |
+|---|---|---|---|
+| sop_recall | 85.7% | ≥ 90% | < 75% → top_k is too low |
+| category_accuracy | 92.0% | ≥ 90% | < 80% → categorize prompt needs tuning |
+| keyword_coverage | 64.2% | ≥ 80% | < 60% → retrieval or prompt gap |
+| grounding_rate | 99.3% | ≥ 95% | < 90% → hallucination risk, check FM-04 |
+| staleness_disclaimer_rate | 100% | 100% | < 90% → swap back to generate_v2.txt |
+| next_step_rate | 100% | 100% | < 90% → prompt regression, check generate version |
+| judge_good_rate | 72% (mock) | ≥ 75% | < 60% → answers are incomplete or wrong |
+| COMPOSITE | 90.2% | ≥ 90% | < 75% → CI gate blocks merge |
+
+IF A METRIC IS IN THE DANGER ZONE:
+  sop_recall low         → increase top_k (try 5); check if category augmentation helps
+  category_accuracy low  → read the wrong-category traces; edit categorize_v1.txt
+  keyword_coverage low   → the answer exists but facts aren't in it; check retrieved_context
+  grounding_rate low     → Claude invented something; add "never invent" to generate prompt
+  staleness low          → check which generate_prompt version is in config.prompts.generate
+  next_step low          → add a stronger "MUST include a link" instruction to the prompt
+  judge_good low         → open the "bad" judge traces; find the pattern; document as new FM
+
+The cycle is always: metric drops → read the traces → find the pattern →
+document the failure mode → fix the cause → verify with `make eval` → commit.

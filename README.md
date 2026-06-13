@@ -27,7 +27,7 @@ make agent Q="How do I apply for the SGAO nursing programme?"
 ```
 
 Set `ANTHROPIC_API_KEY` in `.env` to switch from the mock to real models:
-- Agent model: `claude-sonnet-4-20250514` (swappable)
+- Agent model: `claude-sonnet-4-6` (swappable)
 - Judge model: `claude-haiku-4-5-20251001` (**pinned** — never auto-upgrades,
   so scores stay comparable across agent changes)
 
@@ -74,3 +74,30 @@ Set `ANTHROPIC_API_KEY` in `.env` to switch from the mock to real models:
 CI — run offline with zero keys and byte-identical outputs. CI stays free and
 flake-free; the same `--fail-under` gate applies to real models when the
 secret is configured.
+
+## Web interface (end users + AG personnel)
+
+Two surfaces over one FastAPI backend that wraps the same `FAQAgent`:
+
+```bash
+make serve         # http://localhost:8000
+```
+
+| URL | Audience | Purpose |
+|---|---|---|
+| `/` | End users (Kenyans/diaspora) | Calm Q&A chat — ask, get a grounded answer with its source SOPs, rate it |
+| `/admin` | AG-Career Hub personnel | Live ops console — stats, every question logged, flagged-for-review queue, in-place SOP editor with one-click reindex |
+
+The admin console is gated by `ADMIN_TOKEN` (default `ag-admin-dev`, set your own
+in `.env`). The server runs in demo/mock mode with no API key, or live answers
+once `ANTHROPIC_API_KEY` is set — identical to the CLI.
+
+### API endpoints
+Public: `POST /api/ask`, `POST /api/feedback`
+Admin (header `X-Admin-Token`): `/api/admin/stats`, `/questions`, `/flagged`,
+`/trace/{id}`, `/sops`, `GET|PUT /sops/{id}`, `POST /reindex`
+
+Every answered question is appended to `data/qa_log.jsonl` with its three
+ground-truth-free metrics (grounding, staleness disclaimer, next-step) so
+personnel can monitor live quality. Each question also writes a full trace to
+`traces/`, viewable in the admin drawer.

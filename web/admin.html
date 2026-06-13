@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AG-Career Hub — Operations Console</title>
+<style>
+  /* Same palette as the public app, but here colour is signal, not warmth.
+     Denser grid, monospace data, gold/green/red as health indicators. */
+  :root{
+    --ink:#15140F; --panel:#1C1B15; --panel-2:#23221A;
+    --paper:#EDE8DA; --muted:#8E8676; --line:#322F25;
+    --gold:#D6A02A; --green:#4FB05E; --red:#E0565B; --amber:#E0A84B;
+    --radius:10px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"SF Mono",ui-monospace,"Cascadia Mono",Menlo,monospace;
+    background:var(--ink);color:var(--paper);font-size:13px;line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .serif{font-family:"Iowan Old Style",Georgia,serif}
+
+  /* gate */
+  #gate{position:fixed;inset:0;background:var(--ink);display:flex;
+        align-items:center;justify-content:center;z-index:50}
+  #gate .card{background:var(--panel);border:1px solid var(--line);
+    border-radius:14px;padding:34px;width:min(380px,90vw);text-align:center}
+  #gate h1{font-family:"Iowan Old Style",Georgia,serif;font-size:1.4rem;
+    margin-bottom:6px;font-weight:600}
+  #gate p{color:var(--muted);font-size:.82rem;margin-bottom:20px}
+  #gate input{width:100%;background:var(--panel-2);border:1px solid var(--line);
+    color:var(--paper);border-radius:8px;padding:11px 14px;font-family:inherit;
+    font-size:.95rem;margin-bottom:12px}
+  #gate button{width:100%;background:var(--gold);color:var(--ink);border:0;
+    border-radius:8px;padding:11px;font-family:inherit;font-weight:700;
+    cursor:pointer;font-size:.9rem}
+  #gate .err{color:var(--red);font-size:.78rem;margin-top:10px;min-height:1em}
+
+  /* shell */
+  header{background:var(--panel);border-bottom:1px solid var(--line);
+    padding:14px 22px;display:flex;align-items:center;gap:16px}
+  header h1{font-family:"Iowan Old Style",Georgia,serif;font-size:1.2rem;
+    font-weight:600}
+  header .pill{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;
+    color:var(--gold);border:1px solid var(--line);padding:3px 9px;border-radius:5px}
+  header .right{margin-left:auto;display:flex;gap:8px;align-items:center}
+  header .right .mode{font-size:.72rem;color:var(--muted)}
+  header button{background:var(--panel-2);color:var(--paper);border:1px solid var(--line);
+    border-radius:7px;padding:7px 13px;font-family:inherit;cursor:pointer;font-size:.78rem}
+  header button:hover{border-color:var(--gold)}
+
+  main{padding:22px;max-width:1180px;margin:0 auto}
+
+  /* tabs */
+  .tabs{display:flex;gap:4px;margin-bottom:20px;border-bottom:1px solid var(--line)}
+  .tab{padding:9px 16px;cursor:pointer;color:var(--muted);font-size:.8rem;
+    text-transform:uppercase;letter-spacing:.05em;border-bottom:2px solid transparent}
+  .tab.active{color:var(--paper);border-bottom-color:var(--gold)}
+
+  /* stat cards */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));
+    gap:12px;margin-bottom:22px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:16px 18px}
+  .card .k{font-size:.68rem;text-transform:uppercase;color:var(--muted);
+    letter-spacing:.06em}
+  .card .v{font-family:"Iowan Old Style",Georgia,serif;font-size:2rem;
+    margin-top:6px;font-weight:600}
+  .card .v small{font-size:.9rem;color:var(--muted)}
+  .v.good{color:var(--green)} .v.warn{color:var(--amber)} .v.bad{color:var(--red)}
+
+  /* bars */
+  .bars{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px;margin-bottom:22px}
+  .bars h3{font-size:.72rem;text-transform:uppercase;color:var(--muted);
+    letter-spacing:.06em;margin-bottom:14px}
+  .bar{display:flex;align-items:center;gap:12px;margin-bottom:9px}
+  .bar .lbl{width:130px;font-size:.78rem;color:var(--paper)}
+  .bar .track{flex:1;background:var(--panel-2);border-radius:5px;height:18px;overflow:hidden}
+  .bar .fill{height:100%;background:var(--gold);border-radius:5px;
+    display:flex;align-items:center;justify-content:flex-end;padding-right:7px;
+    font-size:.7rem;color:var(--ink);font-weight:700;min-width:24px}
+  .bar .n{width:42px;text-align:right;color:var(--muted);font-size:.78rem}
+
+  /* tables */
+  table{width:100%;border-collapse:collapse;background:var(--panel);
+    border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line);
+    font-size:.8rem;vertical-align:top}
+  th{font-size:.66rem;text-transform:uppercase;color:var(--muted);letter-spacing:.05em}
+  tr:last-child td{border-bottom:0}
+  tr.row{cursor:pointer}
+  tr.row:hover{background:var(--panel-2)}
+  .q-cell{max-width:360px;color:var(--paper)}
+  .cat{font-size:.64rem;text-transform:uppercase;color:var(--gold);
+    border:1px solid var(--line);padding:2px 7px;border-radius:4px}
+  .m{font-size:.74rem;font-weight:700}
+  .m.good{color:var(--green)} .m.warn{color:var(--amber)} .m.bad{color:var(--red)}
+  .sops-mini{color:var(--muted);font-size:.7rem}
+
+  .empty{color:var(--muted);text-align:center;padding:40px;font-size:.85rem}
+
+  /* drawer */
+  #drawer{position:fixed;top:0;right:0;bottom:0;width:min(560px,94vw);
+    background:var(--panel);border-left:1px solid var(--line);transform:translateX(100%);
+    transition:.25s;z-index:40;overflow-y:auto;padding:24px}
+  #drawer.open{transform:translateX(0)}
+  #drawer .x{position:absolute;top:18px;right:18px;cursor:pointer;color:var(--muted);
+    background:none;border:0;font-size:1.3rem}
+  #drawer h2{font-family:"Iowan Old Style",Georgia,serif;font-size:1.1rem;
+    margin-bottom:4px;max-width:46ch}
+  #drawer .sub{color:var(--muted);font-size:.74rem;margin-bottom:18px}
+  #drawer pre{white-space:pre-wrap;background:var(--panel-2);border:1px solid var(--line);
+    border-radius:8px;padding:14px;font-size:.78rem;color:var(--paper);overflow-x:auto}
+  #drawer .answer{font-family:"Iowan Old Style",Georgia,serif;font-size:.95rem;
+    line-height:1.65;white-space:pre-wrap;margin:6px 0 18px}
+  #drawer .metrics{display:flex;gap:18px;margin:14px 0 20px;flex-wrap:wrap}
+  #drawer .metrics div{font-size:.74rem;color:var(--muted)}
+  #drawer .metrics b{display:block;font-size:1.2rem;font-family:Georgia,serif}
+
+  /* sop editor */
+  #sopeditor textarea{width:100%;height:50vh;background:var(--panel-2);
+    border:1px solid var(--line);border-radius:8px;color:var(--paper);
+    font-family:inherit;font-size:.78rem;padding:14px;line-height:1.55;resize:vertical}
+  #sopeditor .actions{display:flex;gap:10px;margin-top:12px}
+  #sopeditor button{background:var(--green);color:var(--ink);border:0;border-radius:7px;
+    padding:9px 18px;font-family:inherit;font-weight:700;cursor:pointer}
+  #sopeditor button.ghost{background:var(--panel-2);color:var(--paper);
+    border:1px solid var(--line)}
+  .saved{color:var(--green);font-size:.78rem;margin-left:6px}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="card">
+    <h1 class="serif">Operations Console</h1>
+    <p>AG-Career Hub personnel only. Enter your admin token.</p>
+    <input id="token" type="password" placeholder="Admin token" autocomplete="off">
+    <button onclick="unlock()">Enter</button>
+    <div class="err" id="gateErr"></div>
+  </div>
+</div>
+
+<header class="hidden" id="shell-h">
+  <h1 class="serif">AG-Career Hub</h1>
+  <span class="pill">Operations Console</span>
+  <div class="right">
+    <span class="mode" id="mode"></span>
+    <button onclick="loadAll()">Refresh</button>
+    <button onclick="reindex()">Reindex SOPs</button>
+  </div>
+</header>
+
+<main class="hidden" id="shell-m">
+  <div class="tabs">
+    <div class="tab active" data-tab="overview">Overview</div>
+    <div class="tab" data-tab="questions">Questions</div>
+    <div class="tab" data-tab="flagged">Needs review</div>
+    <div class="tab" data-tab="sops">Knowledge base</div>
+  </div>
+
+  <section id="overview"></section>
+  <section id="questions" class="hidden"></section>
+  <section id="flagged" class="hidden"></section>
+  <section id="sops" class="hidden"></section>
+</main>
+
+<div id="drawer">
+  <button class="x" onclick="closeDrawer()">×</button>
+  <div id="drawer-body"></div>
+</div>
+
+<script>
+let TOKEN='';
+const H=()=>({'Content-Type':'application/json','X-Admin-Token':TOKEN});
+
+async function unlock(){
+  TOKEN=document.getElementById('token').value.trim();
+  const err=document.getElementById('gateErr');err.textContent='';
+  try{
+    const r=await fetch('/api/admin/stats',{headers:H()});
+    if(r.status===401){err.textContent='Token not recognised.';return;}
+    document.getElementById('gate').classList.add('hidden');
+    document.getElementById('shell-h').classList.remove('hidden');
+    document.getElementById('shell-m').classList.remove('hidden');
+    loadAll();
+  }catch(e){err.textContent='Cannot reach the server.';}
+}
+document.getElementById('token').addEventListener('keydown',
+  e=>{if(e.key==='Enter')unlock();});
+
+// tabs
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  ['overview','questions','flagged','sops'].forEach(id=>
+    document.getElementById(id).classList.toggle('hidden',id!==t.dataset.tab));
+});
+
+function esc(s){const d=document.createElement('div');d.textContent=s==null?'':s;return d.innerHTML;}
+function pct(v){return v==null?'—':Math.round(v*100)+'%';}
+function cls(v,warnAt=1,badAt=.9){
+  if(v==null)return'';if(v>=warnAt)return'good';if(v>=badAt)return'warn';return'bad';}
+
+async function loadAll(){
+  await Promise.all([loadOverview(),loadQuestions(),loadFlagged(),loadSops()]);
+}
+
+async function loadOverview(){
+  const s=await(await fetch('/api/admin/stats',{headers:H()})).json();
+  document.getElementById('mode').textContent=
+    (s.agent.mock?'⬤ demo mode':'⬤ live · '+s.agent.model)+' · top_k='+s.agent.top_k;
+
+  const fb=s.feedback||{helpful:0,not_helpful:0,none:0};
+  const helpRate=(fb.helpful+fb.not_helpful)?fb.helpful/(fb.helpful+fb.not_helpful):null;
+
+  const cards=`
+    <div class="card"><div class="k">Questions answered</div>
+      <div class="v">${s.total}</div></div>
+    <div class="card"><div class="k">Avg grounding</div>
+      <div class="v ${cls(s.avg_grounding)}">${pct(s.avg_grounding)}</div></div>
+    <div class="card"><div class="k">Staleness disclaimers</div>
+      <div class="v ${cls(s.avg_staleness)}">${pct(s.avg_staleness)}</div></div>
+    <div class="card"><div class="k">Next-step present</div>
+      <div class="v ${cls(s.avg_next_step)}">${pct(s.avg_next_step)}</div></div>
+    <div class="card"><div class="k">Helpful rate</div>
+      <div class="v ${cls(helpRate,.8,.6)}">${pct(helpRate)}</div></div>
+    <div class="card"><div class="k">Needs review</div>
+      <div class="v ${s.flagged?'bad':'good'}">${s.flagged}</div></div>`;
+
+  const cats=Object.entries(s.by_category||{});
+  const max=Math.max(1,...cats.map(([,n])=>n));
+  const bars=cats.map(([c,n])=>`
+    <div class="bar"><div class="lbl">${esc(c)}</div>
+      <div class="track"><div class="fill" style="width:${Math.max(8,n/max*100)}%">${n}</div></div>
+    </div>`).join('')||'<div class="empty">No questions yet.</div>';
+
+  document.getElementById('overview').innerHTML=`
+    <div class="cards">${cards}</div>
+    <div class="bars"><h3>Questions by category</h3>${bars}</div>`;
+}
+
+function mcell(v){return `<span class="m ${cls(v)}">${pct(v)}</span>`;}
+
+async function loadQuestions(){
+  const d=await(await fetch('/api/admin/questions?limit=200',{headers:H()})).json();
+  renderTable('questions',d.questions,false);
+}
+async function loadFlagged(){
+  const d=await(await fetch('/api/admin/flagged',{headers:H()})).json();
+  renderTable('flagged',d.flagged,true);
+}
+
+function renderTable(target,rows,flaggedView){
+  if(!rows||!rows.length){
+    document.getElementById(target).innerHTML=
+      `<div class="empty">${flaggedView?'Nothing needs review. ✓':'No questions logged yet.'}</div>`;
+    return;}
+  const body=rows.map(r=>{
+    const fb=r.feedback;const fbTxt=fb==null?'—':(fb.helpful?'👍':'👎');
+    return `<tr class="row" onclick='openTrace(${JSON.stringify(r.trace_id)})'>
+      <td class="q-cell">${esc(r.question)}
+        <div class="sops-mini">${esc((r.retrieved_sops||[]).join(' · '))}</div></td>
+      <td><span class="cat">${esc(r.category)}</span></td>
+      <td>${mcell(r.grounding_rate)}</td>
+      <td>${mcell(r.staleness_disclaimer_rate)}</td>
+      <td>${mcell(r.next_step_rate)}</td>
+      <td>${fbTxt}</td></tr>`;}).join('');
+  document.getElementById(target).innerHTML=`<table>
+    <thead><tr><th>Question</th><th>Category</th><th>Ground</th>
+      <th>Stale</th><th>Next</th><th>Fb</th></tr></thead>
+    <tbody>${body}</tbody></table>`;
+}
+
+async function openTrace(id){
+  const t=await(await fetch('/api/admin/trace/'+id,{headers:H()})).json();
+  const res=t.result||{};const cfg=t.config||{};
+  const steps=t.steps||[];
+  const retrieve=steps.find(s=>s.step==='retrieve')||{};
+  const srcs=(retrieve.retrieved||[]).map(s=>
+    `<tr><td>${esc(s.sop_id)}</td><td>${esc(s.title)}</td>
+     <td style="text-align:right">${s.score}</td></tr>`).join('');
+  document.getElementById('drawer-body').innerHTML=`
+    <h2>${esc(t.question)}</h2>
+    <div class="sub">${esc(t.ts)} · ${esc(t.trace_id)} ·
+      <span class="cat">${esc(res.category)}</span></div>
+    <div class="answer">${esc(res.answer)}</div>
+    <h3 style="font-size:.7rem;text-transform:uppercase;color:var(--muted);margin-bottom:8px">
+      Retrieved SOPs (top_k=${cfg.top_k})</h3>
+    <table><thead><tr><th>SOP</th><th>Title</th><th style="text-align:right">BM25</th>
+      </tr></thead><tbody>${srcs}</tbody></table>
+    <h3 style="font-size:.7rem;text-transform:uppercase;color:var(--muted);margin:18px 0 8px">
+      Run config</h3>
+    <pre>${esc(JSON.stringify(cfg,null,2))}</pre>`;
+  document.getElementById('drawer').classList.add('open');
+}
+function closeDrawer(){document.getElementById('drawer').classList.remove('open');
+  document.getElementById('sopeditor')&&document.getElementById('sopeditor').remove();}
+
+async function loadSops(){
+  const d=await(await fetch('/api/admin/sops',{headers:H()})).json();
+  const body=d.sops.map(s=>`
+    <tr class="row" onclick='editSop(${JSON.stringify(s.sop_id)})'>
+      <td><b style="color:var(--gold)">${esc(s.sop_id)}</b></td>
+      <td class="q-cell">${esc(s.title)}</td>
+      <td style="text-align:right;color:var(--muted)">${s.words} words</td></tr>`).join('');
+  document.getElementById('sops').innerHTML=`
+    <p style="color:var(--muted);font-size:.8rem;margin-bottom:14px">
+      Editing a SOP rewrites it on disk and rebuilds the retrieval index immediately.</p>
+    <table><thead><tr><th>ID</th><th>Title</th><th style="text-align:right">Size</th>
+      </tr></thead><tbody>${body}</tbody></table>`;
+}
+
+async function editSop(id){
+  const d=await(await fetch('/api/admin/sops/'+id,{headers:H()})).json();
+  document.getElementById('drawer-body').innerHTML=`
+    <div id="sopeditor">
+      <h2>${esc(id)}</h2>
+      <div class="sub">Edit the source text. Save to rebuild the index.</div>
+      <textarea id="soptext">${esc(d.content)}</textarea>
+      <div class="actions">
+        <button onclick="saveSop('${esc(id)}')">Save &amp; reindex</button>
+        <button class="ghost" onclick="closeDrawer()">Cancel</button>
+        <span class="saved hidden" id="savedMsg">Saved ✓</span>
+      </div>
+    </div>`;
+  document.getElementById('drawer').classList.add('open');
+}
+
+async function saveSop(id){
+  const content=document.getElementById('soptext').value;
+  const r=await fetch('/api/admin/sops/'+id,{method:'PUT',headers:H(),
+    body:JSON.stringify({content})});
+  if(r.ok){
+    document.getElementById('savedMsg').classList.remove('hidden');
+    loadSops();
+    setTimeout(()=>{closeDrawer();},900);
+  }
+}
+
+async function reindex(){
+  const r=await fetch('/api/admin/reindex',{method:'POST',headers:H()});
+  const d=await r.json();
+  if(r.ok){loadSops();alert('Reindexed '+d.sops+' SOPs.');}
+}
+</script>
+</body>
+</html>

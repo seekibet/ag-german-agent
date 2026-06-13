@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AG-Career Hub — Germany Opportunities Assistant</title>
+<style>
+  /* ── tokens ──────────────────────────────────────────────────────────
+     Palette grounded in the Kenya→Germany journey: ink base, German gold
+     as the guiding accent, Kenyan green as the "you're on track" signal,
+     warm paper for the reading surface. */
+  :root{
+    --ink:#15140F;          /* near-black, shared flag base */
+    --ink-soft:#2A2820;
+    --paper:#FBF8F1;        /* reading surface */
+    --paper-edge:#EFE9DA;
+    --gold:#C8951E;         /* German gold — guiding accent */
+    --gold-deep:#9C7314;
+    --green:#3A7D44;        /* Kenyan green — on-track / sources */
+    --red:#B5292E;          /* shared flag red — used sparingly */
+    --muted:#7A7363;
+    --line:#E2DBC9;
+    --radius:14px;
+    --shadow:0 1px 2px rgba(21,20,15,.04), 0 8px 28px rgba(21,20,15,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* utility face for labels / chrome */
+  .ui{font-family:"SF Mono",ui-monospace,"Cascadia Mono",Menlo,monospace;
+      letter-spacing:.04em}
+
+  /* ── masthead ───────────────────────────────────────────────────────── */
+  header{
+    background:var(--ink);
+    color:var(--paper);
+    padding:22px 0;
+    border-bottom:3px solid var(--gold);
+  }
+  .wrap{width:min(760px,92vw);margin:0 auto}
+  .brand{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .brand h1{
+    font-size:1.5rem;font-weight:600;letter-spacing:-.01em;
+  }
+  .brand .tag{
+    font-size:.72rem;text-transform:uppercase;color:var(--gold);
+  }
+  .brand .route{
+    font-size:.72rem;color:#B8B09C;margin-left:auto;
+  }
+  .route b{color:var(--paper);font-weight:600}
+
+  /* ── intro / hero ───────────────────────────────────────────────────── */
+  .intro{padding:42px 0 8px}
+  .intro h2{
+    font-size:2rem;line-height:1.18;font-weight:600;letter-spacing:-.02em;
+    max-width:18ch;
+  }
+  .intro h2 em{font-style:normal;color:var(--gold-deep)}
+  .intro p{color:var(--muted);margin-top:12px;max-width:54ch;font-size:1.02rem}
+
+  /* suggestion chips */
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 4px}
+  .chip{
+    font-family:inherit;font-size:.9rem;cursor:pointer;
+    background:#fff;border:1px solid var(--line);border-radius:999px;
+    padding:8px 15px;color:var(--ink-soft);transition:.16s;
+  }
+  .chip:hover{border-color:var(--gold);color:var(--gold-deep);
+              transform:translateY(-1px)}
+
+  /* ── conversation ───────────────────────────────────────────────────── */
+  #thread{padding:8px 0 140px}
+  .turn{margin-top:30px;animation:rise .35s ease both}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1}}
+
+  .q{
+    font-size:1.15rem;font-weight:600;color:var(--ink);
+    padding-left:16px;border-left:3px solid var(--gold);
+  }
+  .a{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:22px 24px;margin-top:14px;
+  }
+  .a .meta{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .badge{
+    font-size:.68rem;text-transform:uppercase;font-weight:600;
+    color:var(--green);background:rgba(58,125,68,.1);
+    padding:4px 10px;border-radius:6px;
+  }
+  .a .body{white-space:pre-wrap;font-size:1.04rem;color:var(--ink-soft)}
+  .a .body ul,.a .body li{margin-left:1.1em}
+
+  .sources{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line)}
+  .sources .lbl{font-size:.7rem;text-transform:uppercase;color:var(--muted);
+                margin-bottom:8px}
+  .src{display:inline-flex;align-items:center;gap:7px;
+       font-size:.85rem;color:var(--green);background:rgba(58,125,68,.07);
+       border:1px solid rgba(58,125,68,.2);border-radius:8px;
+       padding:5px 11px;margin:0 6px 6px 0}
+  .src .id{font-family:"SF Mono",ui-monospace,monospace;font-size:.74rem;
+           color:var(--gold-deep)}
+
+  .fb{display:flex;align-items:center;gap:10px;margin-top:16px}
+  .fb span{font-size:.78rem;color:var(--muted)}
+  .fb button{
+    font-family:inherit;cursor:pointer;border:1px solid var(--line);
+    background:#fff;border-radius:8px;padding:5px 13px;font-size:.85rem;
+    color:var(--ink-soft);transition:.15s;
+  }
+  .fb button:hover{border-color:var(--gold)}
+  .fb button.on{background:var(--green);color:#fff;border-color:var(--green)}
+  .fb .done{color:var(--green);font-weight:600}
+
+  .mockflag{font-size:.72rem;color:var(--gold-deep);margin-top:10px;
+            background:rgba(200,149,30,.08);padding:6px 10px;border-radius:6px;
+            display:inline-block}
+
+  /* loading dots */
+  .thinking{display:flex;gap:5px;padding:6px 0}
+  .thinking i{width:7px;height:7px;border-radius:50%;background:var(--gold);
+              opacity:.4;animation:pulse 1.1s infinite}
+  .thinking i:nth-child(2){animation-delay:.18s}
+  .thinking i:nth-child(3){animation-delay:.36s}
+  @keyframes pulse{0%,100%{opacity:.3;transform:scale(.85)}
+                   50%{opacity:1;transform:scale(1)}}
+
+  /* ── composer ───────────────────────────────────────────────────────── */
+  .composer{
+    position:fixed;left:0;right:0;bottom:0;
+    background:linear-gradient(to top,var(--paper) 72%,transparent);
+    padding:18px 0 22px;
+  }
+  .composer .box{
+    display:flex;gap:10px;background:#fff;border:1px solid var(--line);
+    border-radius:var(--radius);box-shadow:var(--shadow);padding:8px 8px 8px 18px;
+  }
+  .composer textarea{
+    flex:1;border:0;outline:0;resize:none;font-family:inherit;
+    font-size:1.02rem;color:var(--ink);background:transparent;
+    line-height:1.5;max-height:130px;padding:8px 0;
+  }
+  .composer textarea::placeholder{color:#A9A18D}
+  .send{
+    align-self:flex-end;cursor:pointer;border:0;border-radius:10px;
+    background:var(--ink);color:var(--paper);font-family:inherit;
+    font-weight:600;font-size:.95rem;padding:11px 20px;transition:.15s;
+  }
+  .send:hover{background:var(--gold-deep)}
+  .send:disabled{opacity:.4;cursor:not-allowed}
+  .composer .fine{width:min(760px,92vw);margin:8px auto 0;
+                  font-size:.72rem;color:var(--muted);text-align:center}
+  .composer .fine a{color:var(--gold-deep)}
+
+  @media(max-width:560px){.intro h2{font-size:1.6rem}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap brand">
+    <h1>AG-Career Hub</h1>
+    <span class="tag ui">Germany Opportunities Assistant</span>
+    <span class="route ui">Kenya <b>→</b> Germany</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro" id="intro">
+    <h2>Ask anything about <em>building your future</em> in Germany.</h2>
+    <p>Scholarships, the nursing apprenticeship, studying, settling in, jobs,
+       business and investment — answered from AG-Career Hub's own guidance,
+       for Kenyans and the African diaspora.</p>
+    <div class="chips" id="chips">
+      <button class="chip">What scholarships can I get to study in Germany?</button>
+      <button class="chip">How do I apply for the nursing apprenticeship?</button>
+      <button class="chip">What do I do first when I arrive in Germany?</button>
+      <button class="chip">What is WIDU.africa and how does it work?</button>
+    </div>
+  </section>
+
+  <section id="thread"></section>
+</main>
+
+<div class="composer">
+  <div class="wrap">
+    <div class="box">
+      <textarea id="q" rows="1" placeholder="Type your question…"></textarea>
+      <button class="send" id="send">Ask</button>
+    </div>
+    <div class="fine ui">Answers come from AG-Career Hub guidance. Always
+      confirm deadlines and amounts at the official source.</div>
+  </div>
+</div>
+
+<script>
+const thread = document.getElementById('thread');
+const qBox   = document.getElementById('q');
+const sendBtn= document.getElementById('send');
+const intro  = document.getElementById('intro');
+
+// auto-grow textarea
+qBox.addEventListener('input',()=>{qBox.style.height='auto';
+  qBox.style.height=Math.min(qBox.scrollHeight,130)+'px';});
+
+// chips fill the box
+document.getElementById('chips').addEventListener('click',e=>{
+  if(e.target.classList.contains('chip')){qBox.value=e.target.textContent;ask();}
+});
+
+qBox.addEventListener('keydown',e=>{
+  if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();ask();}
+});
+sendBtn.addEventListener('click',ask);
+
+function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+
+async function ask(){
+  const question=qBox.value.trim();
+  if(!question) return;
+  qBox.value='';qBox.style.height='auto';
+  intro.style.display='none';
+  sendBtn.disabled=true;
+
+  const turn=document.createElement('div');
+  turn.className='turn';
+  turn.innerHTML=`<div class="q">${esc(question)}</div>
+    <div class="a"><div class="thinking"><i></i><i></i><i></i></div></div>`;
+  thread.appendChild(turn);
+  window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});
+
+  try{
+    const r=await fetch('/api/ask',{method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({question})});
+    if(!r.ok){const e=await r.json();throw new Error(e.detail||'Request failed');}
+    const d=await r.json();
+    renderAnswer(turn,d);
+  }catch(err){
+    turn.querySelector('.a').innerHTML=
+      `<div class="body">Something went wrong reaching the assistant:
+       ${esc(err.message)}. Please try again in a moment.</div>`;
+  }finally{
+    sendBtn.disabled=false;
+    window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});
+  }
+}
+
+function renderAnswer(turn,d){
+  const sources=(d.sources||[]).map(s=>
+    `<span class="src"><span class="id">${esc(s.sop_id)}</span>${esc(s.title)}</span>`
+  ).join('');
+  const mock=d.mock?`<div class="mockflag ui">Demo mode — connect an API key
+    for live answers. Wording here is a placeholder.</div>`:'';
+
+  turn.querySelector('.a').innerHTML=`
+    <div class="meta"><span class="badge ui">${esc(d.category)}</span></div>
+    <div class="body">${esc(d.answer)}</div>
+    ${sources?`<div class="sources"><div class="lbl ui">Based on</div>${sources}</div>`:''}
+    ${mock}
+    <div class="fb" data-trace="${esc(d.trace_id)}">
+      <span>Was this helpful?</span>
+      <button class="yes">Yes</button>
+      <button class="no">No</button>
+    </div>`;
+
+  const fb=turn.querySelector('.fb');
+  fb.querySelector('.yes').onclick=()=>sendFb(fb,true);
+  fb.querySelector('.no').onclick =()=>sendFb(fb,false);
+}
+
+async function sendFb(fb,helpful){
+  const trace=fb.dataset.trace;
+  fb.querySelectorAll('button').forEach(b=>b.classList.remove('on'));
+  fb.querySelector(helpful?'.yes':'.no').classList.add('on');
+  try{
+    await fetch('/api/feedback',{method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({trace_id:trace,helpful})});
+    setTimeout(()=>{fb.innerHTML='<span class="done">Thanks — noted.</span>';},350);
+  }catch(e){/* silent */}
+}
+</script>
+</body>
+</html>

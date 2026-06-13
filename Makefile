@@ -1,4 +1,4 @@
-.PHONY: agent traces eval test ci install live ask
+.PHONY: agent traces eval test ci install live ask serve
 
 install:
 	pip install -q -r requirements.txt
@@ -31,3 +31,8 @@ live:
 # One-shot question: make ask Q="your question here"
 ask:
 	python -m src.live "$(Q)"
+
+# Start the web server: end-user chat at /, admin console at /admin
+# Set ADMIN_TOKEN to override the dev default; ANTHROPIC_API_KEY for live answers.
+serve:
+	uvicorn api.server:app --host 0.0.0.0 --port 8000 --reload

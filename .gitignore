@@ -4,3 +4,5 @@ __pycache__/
 traces/*.json
 reports/*.json
 .pytest_cache/
+data/qa_log.jsonl
+data/sessions/

@@ -8,6 +8,12 @@ import json
 import os
 import re
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()          # reads .env from the current working directory
+except ImportError:
+    pass                   # dotenv not installed — rely on shell environment
+
 
 AGENT_MODEL = os.getenv("AGENT_MODEL", "claude-sonnet-4-20250514")
 JUDGE_MODEL = os.getenv("JUDGE_MODEL", "claude-haiku-4-5-20251001")  # pinned

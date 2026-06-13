@@ -1,4 +1,4 @@
-.PHONY: agent traces eval test ci install
+.PHONY: agent traces eval test ci install live ask
 
 install:
 	pip install -q -r requirements.txt

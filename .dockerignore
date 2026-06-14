@@ -1,0 +1,10 @@
+.git
+__pycache__
+*.pyc
+.pytest_cache
+.venv
+traces/trace_*.json
+reports/run_*.json
+data/qa_log.jsonl
+data/sessions
+.env

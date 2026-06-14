@@ -6,9 +6,9 @@ import uuid
 
 
 class Tracer:
-    def __init__(self, traces_dir: str = "traces"):
-        self.dir = traces_dir
-        os.makedirs(traces_dir, exist_ok=True)
+    def __init__(self, traces_dir: str | None = None):
+        self.dir = traces_dir or os.getenv("TRACES_DIR", "traces")
+        os.makedirs(self.dir, exist_ok=True)
 
     def new_trace(self, question: str) -> dict:
         return {

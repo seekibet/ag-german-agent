@@ -1,0 +1,29 @@
+# Render Blueprint. Push this repo to GitHub, then in Render:
+#   New + → Blueprint → pick the repo. Set the two secret env vars when prompted.
+services:
+  - type: web
+    name: germany-faq-agent
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: ANTHROPIC_API_KEY      # set in dashboard (Secret). Leave empty = demo mode.
+        sync: false
+      - key: ADMIN_TOKEN            # set your own strong token in dashboard.
+        sync: false
+      - key: AGENT_MODEL
+        value: claude-sonnet-4-6
+      - key: JUDGE_MODEL
+        value: claude-haiku-4-5-20251001
+      - key: TOP_K
+        value: "5"
+      - key: QA_LOG_PATH            # persist question log on the mounted disk
+        value: /var/data/qa_log.jsonl
+      - key: TRACES_DIR
+        value: /var/data/traces
+    disk:                           # persistent storage so logs survive restarts
+      name: data
+      mountPath: /var/data
+      sizeGB: 1

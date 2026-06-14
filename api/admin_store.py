@@ -12,11 +12,14 @@ import threading
 from typing import Dict, List, Optional
 
 _LOCK = threading.Lock()
-QA_LOG = os.path.join("data", "qa_log.jsonl")
+# Configurable so a cloud host can point it at a persistent disk
+# (e.g. QA_LOG_PATH=/var/data/qa_log.jsonl) instead of the ephemeral repo dir.
+QA_LOG = os.getenv("QA_LOG_PATH", os.path.join("data", "qa_log.jsonl"))
 
 
 def _ensure():
-    os.makedirs("data", exist_ok=True)
+    parent = os.path.dirname(QA_LOG) or "."
+    os.makedirs(parent, exist_ok=True)
     if not os.path.exists(QA_LOG):
         open(QA_LOG, "a", encoding="utf-8").close()
 

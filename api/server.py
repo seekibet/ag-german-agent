@@ -149,7 +149,8 @@ def admin_flagged(x_admin_token: str | None = Header(default=None)):
 @app.get("/api/admin/trace/{trace_id}")
 def admin_trace(trace_id: str, x_admin_token: str | None = Header(default=None)):
     require_admin(x_admin_token)
-    path = os.path.join("traces", f"trace_{trace_id}.json")
+    traces_dir = os.getenv("TRACES_DIR", "traces")
+    path = os.path.join(traces_dir, f"trace_{trace_id}.json")
     if not os.path.exists(path):
         raise HTTPException(status_code=404, detail="Trace not found.")
     with open(path, encoding="utf-8") as f:

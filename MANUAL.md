@@ -378,7 +378,7 @@ cp .env.example .env
   Open `.env` in any text editor. It looks like this:
   ```
   ANTHROPIC_API_KEY=
-  AGENT_MODEL=claude-sonnet-4-20250514
+  AGENT_MODEL=claude-sonnet-4-6
   JUDGE_MODEL=claude-haiku-4-5-20251001
   ```
   Paste your key after `ANTHROPIC_API_KEY=` on the same line:
@@ -422,7 +422,7 @@ WHAT HAPPENS:
 
 WHAT YOU SHOULD SEE:
 ```
-  ✓  LIVE MODE — agent=claude-sonnet-4-20250514
+  ✓  LIVE MODE — agent=claude-sonnet-4-6
                 judge=claude-haiku-4-5-20251001 (pinned)
 
   → running...  done in 4.2s
@@ -456,7 +456,7 @@ WHAT YOU SHOULD SEE:
   verdict: ✓ GOOD
   reason:  Answer directly addresses DAAD eligibility and cites €992 stipend.
 
-  mode: LIVE  model=claude-sonnet-4-20250514
+  mode: LIVE  model=claude-sonnet-4-6
   trace: traces/trace_a1b2c3d4.json
 ```
 
@@ -480,7 +480,7 @@ make live
 
 WHAT YOU SEE ON STARTUP:
 ```
-  ✓  LIVE MODE — agent=claude-sonnet-4-20250514
+  ✓  LIVE MODE — agent=claude-sonnet-4-6
                 judge=claude-haiku-4-5-20251001 (pinned)
 
   Germany FAQ — live session  (type 'quit' or Ctrl+C to exit)
@@ -593,7 +593,7 @@ WHAT TO LOOK FOR IN A REAL TRACE:
   "ts": "2026-06-11T09:45:32",
   "question": "How do I apply for the DAAD scholarship?",
   "config": {
-    "model": "claude-sonnet-4-20250514",
+    "model": "claude-sonnet-4-6",
     "top_k": 3,
     "prompts": { "generate": "generate_v2.txt" },  ← which prompt version
     "mock": false                                    ← confirms real mode

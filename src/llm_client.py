@@ -15,7 +15,7 @@ except ImportError:
     pass                   # dotenv not installed — rely on shell environment
 
 
-AGENT_MODEL = os.getenv("AGENT_MODEL", "claude-sonnet-4-20250514")
+AGENT_MODEL = os.getenv("AGENT_MODEL", "claude-sonnet-4-6")
 JUDGE_MODEL = os.getenv("JUDGE_MODEL", "claude-haiku-4-5-20251001")  # pinned
 
 _CATEGORY_KEYWORDS = {

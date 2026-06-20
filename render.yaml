@@ -20,10 +20,12 @@ services:
       - key: TOP_K
         value: "5"
       - key: QA_LOG_PATH            # persist question log on the mounted disk
-        value: /var/data/qa_log.jsonl
+        value: /tmp/qa_log.jsonl
+        #value: /var/data/qa_log.jsonl
       - key: TRACES_DIR
-        value: /var/data/traces
-    disk:                           # persistent storage so logs survive restarts
-      name: data
-      mountPath: /var/data
-      sizeGB: 1
+        value: /tmp/traces
+        #value: /var/data/traces
+    # disk:                           # persistent storage so logs survive restarts
+    #   name: data
+    #   mountPath: /var/data
+    #   sizeGB: 1

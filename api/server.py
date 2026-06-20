@@ -39,6 +39,10 @@ from src import metrics as M
 ADMIN_TOKEN = os.getenv("ADMIN_TOKEN", "ag-admin-dev")  # override in production
 SOPS_DIR = "data/sops"
 
+os.makedirs(os.getenv("TRACES_DIR", "traces"), exist_ok=True)
+_qa_parent = os.path.dirname(os.getenv("QA_LOG_PATH", "data/qa_log.jsonl")) or "."
+os.makedirs(_qa_parent, exist_ok=True)
+
 app = FastAPI(title="Germany FAQ Agent", version="1.0")
 
 # One agent instance, reused across requests. Rebuilt on SOP edits.
